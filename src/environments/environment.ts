@@ -3,10 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  backendUrl: 'http://143.198.91.135:11002/',
+  backendUrl: 'http://143.198.91.135:11002',
   // backendUrl: 'http://localhost:3000/api',
   production: false,
-  baseUrl: 'http://143.198.91.135:11002/',
+  baseUrl: 'http://143.198.91.135:11002',
   useHash: false,
 };
 
