@@ -68,7 +68,7 @@ jobs:
             sudo apt-get update
             sudo apt-get install -y docker-compose
 
-            cd deployment-scripts/barangay_sys_front/
+            cd deployment-scripts/barangay_sys/
             docker-compose pull barangay_sys_front
             docker-compose up -d barangay_sys_front
             docker-compose logs --tail 20 barangay_sys_front
