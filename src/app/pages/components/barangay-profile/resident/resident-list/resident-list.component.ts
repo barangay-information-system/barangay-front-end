@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ResidentService } from 'src/app/pages/service/barangay-profile/resident.service';
 import { PurokService } from 'src/app/pages/service/setup/purok.service';
 
 @Component({
@@ -12,13 +13,19 @@ export class ResidentListComponent implements OnInit {
     loading: boolean = false;
     
 
-    constructor(public router: Router) {}
+    constructor(private residentService: ResidentService) {}
 
     ngOnInit(): void {
-        // const id localStorage.getItem('pkid'),
+        
+        this.getData();
     }
-    create() {
-        this.router.navigate(['/barangay-profile/resident/resident-create']);
+
+    getData(){
+        this.residentService.getData();
+        this.residentService.data.subscribe((result) => {
+            this.dataSource = result;
+            console.log(result);
+        });
     }
 
 }

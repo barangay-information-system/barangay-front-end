@@ -12,7 +12,7 @@
 							<input pInputText type="text" #filter (input)="onGlobalFilter(dt1, $event)"
 								placeholder="Search Keyword" class="w-full" />
 						</span>
-						<button (click)="create()" pTooltip="Create a Resident" tooltipPosition="bottom" type="button"
+						<button [routerLink]="['/barangay-profile/resident/resident-create']" pTooltip="Create a Resident" tooltipPosition="bottom" type="button"
 							label="Create a Resident" severity="success" pButton pRipple icon="pi pi-plus" size="small"
 							[rounded]="true"></button>
 					</div>

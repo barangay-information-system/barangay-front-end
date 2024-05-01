@@ -12,14 +12,23 @@ const httpOptions = {
 @Injectable({
     providedIn: 'root',
 })
-export class PurokService {
-    private baseUrl = '/v1/setup_purok';
+export class ResidentService {
+    private baseUrl = '/v1/resident';
 
     form = this.fb.group({
-        emp_id: ['',[Validators.required]],
-        username: ['', [Validators.required]],
-        password: ['', [Validators.required]],
-        mobile_email: ['', [Validators.required]],
+
+        prefix: [''],
+        firstname: ['',[Validators.required]],
+        middlename: [''],
+        lastname: ['',[Validators.required]],
+        suffix:  [''],
+        birthdate: new Date(),
+        gender: ['',[Validators.required]],
+        religion: [''],
+        civilStatus: ['',[Validators.required]],
+        affiliations: ['',[Validators.required]],
+        barangay: localStorage.getItem('barangay'),
+        purok: {},
        
     });
 
@@ -51,7 +60,7 @@ export class PurokService {
         });
     }
     create() {
-        // return this.http.post(`${this.baseUrl}/register`, this.form.value);
+        return this.http.post(`${this.baseUrl}`, this.form.value);
     }
     getUser(id: string) {
         // return this.http.get(`${this.baseUrl}/byId/${id}`);
