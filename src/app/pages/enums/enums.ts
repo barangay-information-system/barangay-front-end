@@ -86,4 +86,10 @@ export class Enums {
         { name: 'Solo Parent', key: 'Solo Parent' },
         { name: 'Others', key: 'Others' },
     ]
+    civil_staus: any[] = [
+        { name: 'Single', key: 'Single' },
+        { name: 'Married', key: 'Married' },
+        { name: 'Widow/Widower', key: 'Widow/Widower' },
+        { name: 'Legally Seperated', key: 'Legally Seperated' }
+    ]
 }
