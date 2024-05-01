@@ -64,6 +64,9 @@ export class LoginComponent {
             return;
         }
 
+
+        console.log(this.loginForm.value);
+
         this.authService.login(this.loginForm.value).subscribe((result) => {
             const { data }: any = result;
             console.log(data);
