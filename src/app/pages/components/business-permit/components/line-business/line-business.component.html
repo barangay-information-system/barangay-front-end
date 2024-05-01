@@ -1,0 +1,70 @@
+<p-panel>
+	<ng-template pTemplate="header">
+		<div class="flex align-items-center gap-2">
+			<span class="font-bold">Line of Business</span>
+
+		</div>
+	</ng-template>
+	<ng-template pTemplate="icons">
+		<p-button type="button" label="Add line of Business" icon="pi pi-plus" [raised]="true"
+			(click)="showModal()"></p-button>
+	</ng-template>
+	<p-table #dt1 [value]="adService.form.get('line_businesses').value" dataKey="id" [rows]="10" [loading]="loading"
+		[rowHover]="true" styleClass="p-datatable-gridlines p-datatable-sm" [paginator]="true"
+		[globalFilterFields]="filterFields" responsiveLayout="scroll">
+		<ng-template pTemplate="header">
+			<tr>
+				<th style="width: 5% !important"> Code </th>
+				<th> Description </th>
+				<th style="width: 5% !important"> Type </th>
+				<th style="width: 5% !important"> Units </th>
+				<th style="width: 10% !important"> Capital Investment </th>
+				<th style="width: 5% !important"> Essential </th>
+				<th style="width: 10% !important"> Non-Essential </th>
+				<th style="width: 5% !important"> Action </th>
+			</tr>
+		</ng-template>
+		<ng-template pTemplate="body" let-line let-rowIndex="rowIndex">
+			<tr>
+				<td>
+					{{ line.line_business?.code }}
+				</td>
+				<td>
+					{{ line.line_business?.description }}
+				</td>
+				<td>
+					{{ line.application_type?.permit_type }}
+				</td>
+				<td>
+					{{ line.units }}
+				</td>
+				<td>
+					{{ line.capital_investments }}
+				</td>
+				<td>
+					{{ line.essentials }}
+				</td>
+				<td>
+					{{ line.non_essentials }}
+				</td>
+				<td class="text-center">
+					<div class="flex justify-content-center gap-2">
+						<button type="button" pTooltip="Remove record" tooltipPosition="bottom" pButton pRipple
+							icon="pi pi-trash" (click)="remove(rowIndex)" size="small"></button>
+					</div>
+				</td>
+
+			</tr>
+		</ng-template>
+		<ng-template pTemplate="emptymessage">
+			<tr>
+				<td colspan="8">No record found.</td>
+			</tr>
+		</ng-template>
+		<ng-template pTemplate="loadingbody">
+			<tr>
+				<td colspan="8">Loading... Please wait..</td>
+			</tr>
+		</ng-template>
+	</p-table>
+</p-panel>

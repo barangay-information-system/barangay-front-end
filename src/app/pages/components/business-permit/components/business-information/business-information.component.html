@@ -1,0 +1,44 @@
+<form ngForm [formGroup]="adService.form">
+
+    <div class="p-fluid grid">
+        <div class="col-12" formGroupName="business">
+            <div class="field">
+                <label htmlFor="firstname2">Business Number</label>
+                <p-inputGroup>
+                    <input type="text" pInputText placeholder="Search BIN" formControlName="business_id_no" />
+                    <button type="button" (click)="show()" pButton icon="pi pi-search"></button>
+                </p-inputGroup>
+            </div>
+            <div class="field">
+                <label htmlFor="firstname2">Business name</label>
+                <input pInputText id="firstname2" type="text" formControlName="business_name" />
+            </div>
+            <div class="field">
+                <label htmlFor="lastname2">Trade/Franchise name</label>
+                <input pInputText id="lastname2" type="text" formControlName="trade_name" />
+            </div>
+            <div class="field">
+                <label htmlFor="firstname2">Type of Organization</label>
+                <p-dropdown id="organization_type" [options]="organizations" optionLabel="organization_type"
+                    [showClear]="true" [filter]="true" filterBy="organization_type"
+                    placeholder="Select an organization." (onChange)="selectedItem($event)"
+                    formControlName="type_of_business">
+                </p-dropdown>
+            </div>
+            <div class="field">
+                <label htmlFor="lastname2">TIN Number</label>
+                <input pInputText id="lastname2" type="text" formControlName="tin_number" />
+            </div>
+            <div class="field">
+                <label htmlFor="lastname2">DTI/SEC/CDA Registration Date</label>
+                <p-calendar [iconDisplay]="'input'" [showIcon]="true" dateFormat="yy/mm/dd"
+                    formControlName="dti_sec_registered_date"></p-calendar>
+            </div>
+            <div class="field">
+                <label htmlFor="lastname2">DTI/SEC/CDA Registration No</label>
+                <input pInputText id="lastname2" type="text" formControlName="dti_sec_registered_no" />
+            </div>
+        </div>
+    </div>
+
+</form>

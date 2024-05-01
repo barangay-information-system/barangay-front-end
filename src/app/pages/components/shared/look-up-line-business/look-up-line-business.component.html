@@ -1,0 +1,52 @@
+<form ngForm [formGroup]="form">
+    <div class="p-fluid grid">
+        <div class="col-12">
+            <div class="field">
+                <div class="grid">
+                    <div class="md:col-9">
+                        <label htmlFor="description">Description</label>
+                        <p-dropdown [options]="line_businesses" optionLabel="description" [showClear]="true" [filter]="true"
+                            filterBy="description" placeholder="Select a Line of Business." formControlName="line_business">
+                        </p-dropdown>
+                    </div>
+                    <div class="field md:col-3">
+                        <label>Type</label>
+                        <div class="flex flex-wrap gap-2">
+                            <div *ngFor="let type of applicationTypes"
+                                class="field-checkbox flex align-items-center">
+                                <p-radioButton [inputId]="type.id" name="application_type" [value]="type"
+                                    formControlName="application_type"></p-radioButton>
+                                <label [for]="type" class="ml-2">{{ type.permit_type }}</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <div class="grid">
+                    <div class="md:col-3">
+                        <label>Units</label>
+                        <p-inputNumber mode="decimal" [showButtons]="true" inputId="minmax-buttons" [min]="0" formControlName="units"> </p-inputNumber>
+                    </div>
+                    <div class="md:col-3">
+                        <label>Capital Investments</label>
+                        <p-inputNumber mode="decimal" [showButtons]="true" inputId="minmax-buttons" [min]="0" formControlName="capital_investments"> </p-inputNumber>
+                    </div>
+                    <div class="md:col-3">
+                        <label>Essentials</label>
+                        <p-inputNumber mode="decimal" [showButtons]="true" inputId="minmax-buttons" [min]="0" formControlName="essentials"> </p-inputNumber>
+                    </div>
+                    <div class="md:col-3">
+                        <label>Non-essentials</label>
+                        <p-inputNumber mode="decimal" [showButtons]="true" inputId="minmax-buttons" [min]="0" formControlName="non_essentials"> </p-inputNumber>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex w-full justify-content-end gap-4">
+        <p-button type="button" [label]="setActionSelector" icon="pi pi-save" (onClick)="add()"></p-button>
+        <p-button type="button" label="Cancel" icon="pi pi-times" (onClick)="close()" severity="secondary"></p-button>
+    </div>
+
+</form>

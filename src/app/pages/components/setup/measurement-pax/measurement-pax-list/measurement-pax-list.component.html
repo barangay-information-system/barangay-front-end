@@ -1,0 +1,110 @@
+<div class="grid">
+    <div class="col-12">
+        <div class="card">
+
+            <p-table #dt1 [value]="dataSource" dataKey="id" [rows]="10" [loading]="loading" [rowHover]="true"
+                styleClass="p-datatable-gridlines p-datatable-sm" [paginator]="true"
+                [globalFilterFields]="['name','country.name','representative.name','status']" responsiveLayout="scroll">
+                <ng-template pTemplate="caption">
+                    <div class="flex justify-content-between flex-column sm:flex-row">
+                        <div class="mt-2">
+                            <h5>Measure and Pax</h5>
+                        </div>
+                        <button pTooltip="Add Measure Pax" tooltipPosition="bottom" type="button"
+                            label="Add Measure Pax" severity="success " pButton pRipple icon="pi pi-plus" size="small"
+                            [rounded]="true" (click)="showDialog('Save')"></button>
+                    </div>
+                </ng-template>
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th style="min-width: 12rem">
+                            <div class="flex justify-content-between align-items-center">
+                                Description
+                            </div>
+                        </th>
+                        <th style="min-width: 12rem">
+                            <div class="flex justify-content-between align-items-center">
+                                Status
+                            </div>
+                        </th>
+                        <th style="width: 10%">
+                            <div class="flex justify-content-between align-items-center">
+                                Action
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="p-input-icon-left w-full">
+                                <i class="pi pi-search"></i>
+                                <input pInputText type="text"
+                                    (input)="dt1.filter($event.target.value, 'description', 'contains')"
+                                    placeholder="Business Name" class="w-full" />
+                            </span>
+                        </th>
+                        <th>
+                            <p-columnFilter field="status" matchMode="equals" [showMenu]="false">
+                                <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+                                    <p-dropdown [ngModel]="value" [options]="enums.status"
+                                        (onChange)="filter($event.value.name)" placeholder="Any" [showClear]="false">
+                                        <ng-template let-option pTemplate="item">
+                                            <p-tag [value]="option.name">
+                                                {{ option.name }}
+                                            </p-tag>
+                                        </ng-template>
+                                    </p-dropdown>
+                                </ng-template>
+                            </p-columnFilter>
+                        </th>
+                        <th></th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-data>
+                    <tr>
+                        <td>
+                            {{data.description }}
+                        </td>
+                        <td>
+                            {{data.status }}
+                        </td>
+                        <td class="text-center">
+                            <div class="flex justify-content-center gap-2">
+
+                                <button type="button" pTooltip="Edit record" tooltipPosition="bottom" pButton pRipple
+                                    icon="pi pi-pencil" size="small" (click)="edit(data)"></button>
+                                <button type="button" pTooltip="Remove record" tooltipPosition="bottom" pButton pRipple
+                                    icon="pi pi-trash" (click)="remove(data)" size="small"></button>
+                            </div>
+                        </td>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="emptymessage">
+                    <tr>
+                        <td colspan="8">No record found.</td>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="loadingbody">
+                    <tr>
+                        <td colspan="8">Loading business permit data. Please wait..</td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+    </div>
+</div>
+
+<p-dialog header="Header" [(visible)]="visible" [modal]="true" [style]="{ width: '50rem' }"
+    [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }">
+    <ng-template pTemplate="header">
+        <div class="inline-flex align-items-center justify-content-center gap-2">
+            <span class="font-bold white-space-nowrap">Create New Measure Pax</span>
+        </div>
+    </ng-template>
+    <div>
+        <app-measurement-pax-create></app-measurement-pax-create>
+
+    </div>
+    <ng-template pTemplate="footer">
+        <p-button icon="pi pi-save" (click)="submit()" [label]="btn" pAutoFocus [autofocus]="true"></p-button>
+    </ng-template>
+</p-dialog>

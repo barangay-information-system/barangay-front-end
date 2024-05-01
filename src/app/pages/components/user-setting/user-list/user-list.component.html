@@ -1,0 +1,154 @@
+<div class="grid">
+	<p-toast position="top-center"></p-toast>
+	<div class="col-12">
+		<div class="card">
+			<h5>User Accounts</h5>
+			<p-table #dt1 [value]="dataSource" dataKey="id" [rows]="10" [loading]="loading" [rowHover]="true"
+				styleClass="p-datatable-gridlines p-datatable-sm" [paginator]="true" [globalFilterFields]="filterFields"
+				responsiveLayout="scroll">
+				<ng-template pTemplate="caption">
+					<div class="flex justify-content-between flex-column sm:flex-row">
+						<span class="p-input-icon-left mb-2">
+							<i class="pi pi-search"></i>
+							<input pInputText type="text" #filter (input)="onGlobalFilter(dt1, $event)"
+								placeholder="Search Keyword" class="w-full" />
+						</span>
+						<button pTooltip="Create new account" tooltipPosition="bottom" type="button"
+							label="Create new account" severity="success " pButton pRipple icon="pi pi-plus"
+							size="small" [rounded]="true" (click)="show('Create New')"></button>
+					</div>
+				</ng-template>
+				<ng-template pTemplate="header">
+					<tr>
+						<th>
+							<div class="flex justify-content-between align-items-center">
+								Employee Number
+							</div>
+						</th>
+						<th>
+							<div class="flex justify-content-between align-items-center">
+								Username
+							</div>
+						</th>
+						<th>
+							<div class="flex justify-content-between align-items-center">
+								Full Name
+							</div>
+						</th>
+						<th>
+							<div class="flex justify-content-between align-items-center">
+								Department
+							</div>
+						</th>
+						<th>
+							<div class="flex justify-content-between align-items-center">
+								Position
+							</div>
+						</th>
+						<th>
+							<div class="flex justify-content-between align-items-center">
+								Gender
+							</div>
+						</th>
+						<th>
+							<div class="flex justify-content-between align-items-center">
+								Birthdate
+							</div>
+						</th>
+						<th>
+							<div class="flex justify-content-between align-items-center">
+								Barangay
+							</div>
+						</th>
+						<th>
+							<div class="flex justify-content-between align-items-center">
+								Purok
+							</div>
+						</th>
+						<th>
+							<div class="flex justify-content-between align-items-center">
+								Type
+							</div>
+						</th>
+						<th>
+							<div class="flex justify-content-between align-items-center">
+								Shift
+							</div>
+						</th>
+
+						<th>
+							<div class="flex justify-content-between align-items-center">
+								Verified
+							</div>
+						</th>
+
+						<th>
+							<div class="flex justify-content-between align-items-center">
+								Action
+							</div>
+						</th>
+					</tr>
+				</ng-template>
+				<ng-template pTemplate="body" let-user>
+					<tr>
+						<td>
+							{{user.emp_id}}
+						</td>
+						<td>
+							{{user.username}}
+						</td>
+						<td>
+							{{user.firstname}}
+						</td>
+						<td>
+							{{user.department}}
+						</td>
+						<td>
+							{{user.position}}
+						</td>
+						<td>
+							{{user.gender}}
+						</td>
+						<td>
+							{{user.birthdate | date: 'MM-dd-yyyy'}}
+						</td>
+						<td>
+							{{user.barangay}}
+						</td>
+						<td>
+							{{user.purok}}
+						</td>
+						<td>
+							{{user.emp_type}}
+						</td>
+						<td>
+							{{user.time_shift}}
+						</td>
+						<td class="text-center">
+							<i class="pi"
+								[ngClass]="{'true-icon pi-check-circle text-green-500': user.isActive, 'false-icon pi-times-circle text-pink-500': !user.isActive}"></i>
+						</td>
+						<td class="text-center">
+							<div class="flex justify-content-center gap-2">
+								<button type="button" pTooltip="Edit record" tooltipPosition="bottom" pButton pRipple
+									icon="pi pi-user-edit" (click)="editUser(user)" size="small"></button>
+								<button type="button" pTooltip="Remove record" tooltipPosition="bottom" pButton pRipple
+									icon="pi pi-trash" (click)="removeUser(user)" size="small"></button>
+							</div>
+						</td>
+					</tr>
+				</ng-template>
+				<ng-template pTemplate="emptymessage">
+					<tr>
+						<td colspan="15">No record found.</td>
+					</tr>
+				</ng-template>
+				<ng-template pTemplate="loadingbody">
+					<tr>
+						<td colspan="15">Loading business permit data. Please wait..</td>
+					</tr>
+				</ng-template>
+			</p-table>
+		</div>
+	</div>
+</div>

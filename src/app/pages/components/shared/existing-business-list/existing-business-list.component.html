@@ -1,0 +1,51 @@
+<p-table #dt1 [value]="dataSource" dataKey="id" [rows]="10" [loading]="loading" selectionMode="single"
+    [(selection)]="selectedItem" styleClass="p-datatable-gridlines p-datatable-sm" [paginator]="true"
+    [globalFilterFields]="filterFields" responsiveLayout="scroll">
+    <ng-template pTemplate="caption">
+        <div class="flex justify-content-between flex-column sm:flex-row">
+            <span class="p-input-icon-left mb-2">
+                <i class="pi pi-search"></i>
+                <input pInputText type="text" #filter (input)="onGlobalFilter(dt1, $event)" placeholder="Search Keyword"
+                    class="w-full" />
+            </span>
+            <button pTooltip="Select Business" tooltipPosition="bottom" type="button" label="Select Business"
+                severity="success " pButton pRipple icon="pi pi-plus" size="small" [rounded]="true"
+                (click)="select()"></button>
+        </div>
+    </ng-template>
+    <ng-template pTemplate="header">
+        <tr>
+            <th style="width: 15% !important"> Business Number </th>
+            <th> Business Name </th>
+            <th style="width: 15% !important"> Organization Type </th>
+            <th> Owner Name </th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-permit>
+        <tr [pSelectableRow]="permit">
+            <td>
+                {{permit?.business_id_no}}
+            </td>
+            <td>
+                {{permit?.business_name}}
+            </td>
+            <td>
+                {{permit.type_of_business?.organization_type}}
+            </td>
+            <td>
+                {{ permit.owner_taxpayer_information?.full_name }}
+            </td>
+
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="emptymessage">
+        <tr>
+            <td colspan="8">No record found.</td>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="loadingbody">
+        <tr>
+            <td colspan="8">Loading business permit data. Please wait..</td>
+        </tr>
+    </ng-template>
+</p-table>

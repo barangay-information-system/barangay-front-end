@@ -1,0 +1,58 @@
+<p-panel>
+    <ng-template pTemplate="header">
+        <div class="flex align-items-center gap-2">
+            <span class="font-bold">Measurement and pax</span>
+        </div>
+    </ng-template>
+    <ng-template pTemplate="icons">
+        <p-button type="button" label="Add meassure and pax" icon="pi pi-plus" [raised]="true" (click)="showModal()" ></p-button>
+    </ng-template>
+    <p-table #dt1 [value]="adService.form.get('measure_paxes').value" dataKey="id" [rows]="10" [loading]="loading" [rowHover]="true"
+        styleClass="p-datatable-gridlines p-datatable-sm" [paginator]="true" [globalFilterFields]="filterFields"
+        responsiveLayout="scroll">
+        <ng-template pTemplate="header">
+            <tr>
+                <th> Number of Unit </th>
+                <th> Capacity </th>
+                <th> Measure or Pax </th>
+                <th> Line of Business </th>
+                <th> Action </th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-data let-rowIndex="rowIndex">
+            <tr>
+                <td>
+                    {{ data.number_units }}
+                </td>
+                <td>
+                    {{ data.capacity }}
+                </td>
+                <td>
+                    {{ data.measure_pax?.description }}
+                </td>
+                <td>
+                    {{ data.line_business?.description }}
+                </td>
+
+                <td class="text-center">
+                    <div class="flex justify-content-center gap-2">
+                        <button type="button" pTooltip="Remove record" tooltipPosition="bottom" pButton pRipple
+                            icon="pi pi-trash" (click)="remove(rowIndex)" size="small"></button>
+                    </div>
+                </td>
+
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="emptymessage">
+            <tr>
+                <td colspan="8">No record found.</td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="loadingbody">
+            <tr>
+                <td colspan="8">Loading business permit data. Please wait..</td>
+            </tr>
+        </ng-template>
+    </p-table>
+
+</p-panel>

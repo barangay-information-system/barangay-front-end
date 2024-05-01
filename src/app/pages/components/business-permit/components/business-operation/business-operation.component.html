@@ -1,0 +1,124 @@
+<form ngForm [formGroup]="adService.form">
+    <div class="p-fluid grid" formGroupName="business_operation">
+        <div class="col-12">
+            <div class="field">
+                <label htmlFor="firstname2">Business Activity</label>
+                <p-dropdown id="typeLevel" [options]="enums.businessActivity" optionLabel="name" [showClear]="true"
+                    [filter]="true" filterBy="name" optionValue="name" placeholder="Select a business activity" formControlName="business_activity">
+                </p-dropdown>
+            </div>
+            <div class="field">
+                <div class="grid">
+                    <div class="md:col-6">
+                        <label for="businessArea">Business Area</label>
+                        <p-inputNumber inputId="businessArea" suffix=" in SQM" placeholder="0 in SQM" formControlName="business_area"> </p-inputNumber>
+                    </div>
+                    <div class="md:col-6">
+                        <label for="floorArea">Total Floor Area</label>
+                        <p-inputNumber inputId="floorArea" suffix=" in SQM" placeholder="0 in SQM" formControlName="floor_area"> </p-inputNumber>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <span class="text-xl font-semibold">Number of Employees:</span>
+            </div>
+            <div class="field">
+                <div class="grid">
+                    <div class="md:col-3">
+                        <label htmlFor="address">in Male</label>
+                        <p-inputNumber [showButtons]="true" inputId="stacked" [min]="0" formControlName="no_male">
+                        </p-inputNumber>
+                    </div>
+                    <div class="md:col-3">
+                        <label htmlFor="city">in Female</label>
+                        <p-inputNumber [showButtons]="true" inputId="stacked" [min]="0" formControlName="no_female">
+                        </p-inputNumber>
+                    </div>
+                    <div class="md:col-3">
+                        <label htmlFor="city">in Establishment</label>
+                        <p-inputNumber [showButtons]="true" inputId="stacked" [min]="0" formControlName="no_in_establishment"> </p-inputNumber>
+                    </div>
+                    <div class="md:col-3">
+                        <label htmlFor="city">Residing within LGU</label>
+                        <p-inputNumber [showButtons]="true" inputId="stacked" [min]="0" formControlName="no_residing_lgu"> </p-inputNumber>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <span class="text-xl font-semibold">Number of Vehicles:</span>
+            </div>
+            <div class="field">
+                <div class="grid">
+                    <div class="md:col-6">
+                        <label htmlFor="address">Van Truck</label>
+                        <p-inputNumber [showButtons]="true" inputId="stacked" [min]="0" formControlName="no_van_truck">
+                        </p-inputNumber>
+                    </div>
+                    <div class="md:col-6">
+                        <label htmlFor="city">Motorcycle</label>
+                        <p-inputNumber [showButtons]="true" inputId="stacked" [min]="0" formControlName="no_motorcycle">
+                        </p-inputNumber>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label htmlFor="address">If the palce is Owned or Rented?</label>
+                <div class="flex flex-wrap gap-2 mt-2">
+                    <div *ngFor="let type of enums.typeOfPlace" class="field-checkbox flex align-items-center">
+                        <p-radioButton [inputId]="type.key" name="is_own_rent" [value]="type.key" formControlName="is_own_rent"></p-radioButton>
+                        <label [for]="type.key" class="ml-2">{{ type.name }}</label>
+                    </div>
+                </div>
+            </div>
+            <div class="field grid">
+                <div class="col-6">
+                    <label htmlFor="address">Tax Declaration Number</label>
+                    <input pInputText id="lastname2" type="text"  formControlName="tax_declaration_no"/>
+                </div>
+                <div class="col-6">
+                    <label htmlFor="address">Property Index Number (PIN)</label>
+                    <input pInputText id="lastname2" type="text"  formControlName="property_index_no"/>
+                </div>
+            </div>
+
+            <div class="field">
+                <label htmlFor="address">Are you enjoying tax incentives from any government entity?</label>
+                <div class="flex flex-wrap gap-2 mt-2">
+                    <div *ngFor="let item of enums.incentives" class="field-checkbox flex align-items-center">
+                        <p-radioButton [inputId]="item.key" name="is_tax_incentives" [value]="item.key" formControlName="is_tax_incentives"></p-radioButton>
+                        <label [for]="item.key" class="ml-2">{{ item.name }}</label>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label htmlFor="address">Community Tax Certificate (CTC)</label>
+                <input pInputText id="lastname2" type="text"  formControlName="ctc"/>
+            </div>
+            <div class="field grid">
+
+                <div class="col-6">
+                    <label htmlFor="address">Are you Barangay Micro Business Enterprise Registered?</label>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                        <div *ngFor="let item of enums.micro_registered" class="field-checkbox flex align-items-center">
+                            <p-radioButton [inputId]="item.key" name="is_micro_registered"
+                                [value]="item.key" formControlName="is_micro_registered"></p-radioButton>
+                            <label [for]="item.key" class="ml-2">{{ item.name }}</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <label htmlFor="address">Are you Bangko Sentral ng Pilipinas Registered?</label>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                        <div *ngFor="let item of enums.bsp_registered" class="field-checkbox flex align-items-center">
+                            <p-radioButton [inputId]="item.key" name="is_bsp_registered"
+                                [value]="item.key" formControlName="is_bsp_registered"></p-radioButton>
+                            <label [for]="item.key" class="ml-2">{{ item.name }}</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</form>

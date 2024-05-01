@@ -1,0 +1,49 @@
+<form ngForm [formGroup]="adService.form">
+    <div class="p-fluid grid">
+        <div class="col-12" formGroupName="owner_taxpayer_information">
+            <div class="field">
+                <label htmlFor="last_name">Last name</label>
+                <input pInputText id="last_name" type="text" formControlName="last_name" />
+            </div>
+            <div class="field">
+                <label htmlFor="first_name">First name</label>
+                <input pInputText id="first_name" type="text" formControlName="first_name" />
+            </div>
+            <div class="field">
+                <label htmlFor="middle_name">Middle name</label>
+                <input pInputText id="middle_name" type="text" formControlName="middle_name" />
+            </div>
+            <div class="field grid">
+                <div class="col-6">
+                    <label htmlFor="suffix">Suffix</label>
+                    <input pInputText id="suffix" type="text" formControlName="suffix" />
+                </div>
+                <div class="col-6">
+                    <label htmlFor="firstname2">Gender</label>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                        <div *ngFor="let category of categories" class="field-checkbox flex align-items-center">
+                            <p-radioButton [inputId]="category.key" name="gender" [value]="category.name"
+                                formControlName="gender"></p-radioButton>
+                            <label [for]="category.key" class="ml-2">{{ category.name }}</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label htmlFor="mobile_number">Mobile Number</label>
+                <p-inputMask mask="9999-999-9999" id="mobile_number" placeholder="0000-000-0000"
+                    formControlName="mobile_number"></p-inputMask>
+            </div>
+            <div class="field">
+                <label htmlFor="tel_fax_number">Tel/Fax Number</label>
+                <p-inputMask mask="999-9999" id="tel_fax_number" placeholder="000-0000"
+                    formControlName="tel_fax_number"></p-inputMask>
+            </div>
+            <div class="field">
+                <label htmlFor="email_address">Email Address</label>
+                <input pInputText id="email_address" type="text" formControlName="email_address" />
+            </div>
+        </div>
+    </div>
+
+</form>

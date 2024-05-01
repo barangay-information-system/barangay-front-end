@@ -1,0 +1,123 @@
+<form ngForm [formGroup]="adService.form">
+    <p-card header="Business Permit Application">
+        <p-tabView styleClass="tabview-custom w-full p-2" size="lg" [activeIndex]="activeIndex">
+            <p-tabPanel>
+                <ng-template pTemplate="header" pStyleClass="gap-4">
+                    <i class="pi pi-calendar mr-2"></i>
+                    <span>Business Information and Registration</span>
+                </ng-template>
+                <div class="grid gap-2 w-full">
+                    <p-panel header="Application Details" class="mt-2">
+                        <div class="">
+                            <div class="p-fluid p-formgrid grid pt-4">
+                                <div class="field col-4">
+                                    <label>Application Type</label>
+                                    <div class="flex flex-wrap gap-2">
+                                        <div *ngFor="let type of applicationTypes"
+                                            class="field-checkbox flex align-items-center">
+                                            <p-radioButton [inputId]="type.id" name="application_type"
+                                                [value]="type" formControlName="application_type"></p-radioButton>
+                                            <label [for]="type" class="ml-2">{{ type.permit_type }}</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field md:col-5">
+                                    <label>Mode of Payment</label>
+                                    <p-dropdown [options]="modeOfPayments" optionLabel="payment_type" [showClear]="true"
+                                        [filter]="true" filterBy="payment_type" placeholder="Select a mode of payment." formControlName="mode_payment" >
+                                    </p-dropdown>
+                                </div>
+                                <div class="field md:col-3">
+                                    <label>Tax Year</label>
+                                    <p-calendar [iconDisplay]="'input'" view="year" [showIcon]="true"
+                                        dateFormat="yy"formControlName="tax_year" ></p-calendar>
+                                </div>
+                            </div>
+                        </div>
+                    </p-panel>
+                    <p-panel header="Business Information and Registration" class="w-full">
+                        <div class="grid">
+                            <div class="p-fluid p-formgrid grid p-4 w-full">
+                                <div class="col-12 md:col-4">
+                                    <p-panel header="Business Information">
+                                        <app-business-information></app-business-information>
+                                    </p-panel>
+
+                                </div>
+                                <div class="col-12 md:col-4">
+                                    <p-panel header="Owner/Taxpayer Information">
+                                        <app-tax-payer-information></app-tax-payer-information>
+                                    </p-panel>
+
+                                </div>
+                                <div class="col-12 md:col-4">
+                                    <p-panel header="Owner/Taxpayer Address">
+                                        <app-tax-payer-address></app-tax-payer-address>
+                                    </p-panel>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </p-panel>
+                </div>
+            </p-tabPanel>
+            <p-tabPanel>
+                <ng-template pTemplate="header">
+                    <i class="pi pi-user  mr-2"></i>
+                    <span>Business Operation</span>
+                </ng-template>
+                <div class="grid">
+                    <div class="p-fluid p-formgrid grid p-4 w-full">
+                        <div class="col-12 md:col-6">
+                            <p-panel header="Business Activity">
+                                <app-business-operation></app-business-operation>
+                            </p-panel>
+                        </div>
+                        <div class="col-12 md:col-6">
+                            <p-panel header="Business Address">
+                                <app-business-address></app-business-address>
+                            </p-panel>
+                        </div>
+                    </div>
+                </div>
+            </p-tabPanel>
+            <p-tabPanel>
+                <ng-template pTemplate="header">
+                    <i class="pi pi-search  mr-2"></i>
+                    <span>Business Activity / Requirements</span>
+                </ng-template>
+
+                <div class="grid">
+                    <div class="p-fluid p-formgrid grid p-4 w-full">
+                        <div class="col-12">
+                            <app-line-business></app-line-business>
+                        </div>
+                        <div class="col-12">
+                            <app-measure-pax></app-measure-pax>
+
+                        </div>
+                        <div class="col-12">
+                            <p-panel header="Documentary Requirements">
+                                <app-document-requirements></app-document-requirements>
+                            </p-panel>
+                        </div>
+                    </div>
+                </div>
+            </p-tabPanel>
+        </p-tabView>
+        <ng-template pTemplate="footer">
+
+            <span class="flex justify-content-end gap-2">
+                <button pButton pRipple label="Previous" [disabled]="isPrevLast" (click)="navigate(false)"
+                    icon="pi pi-fast-backward"></button>
+                <button pButton pRipple label="Draft" icon="pi pi-save" (click)="onSubmit()"></button>
+                <button pButton pRipple label="Save" icon="pi pi-save"></button>
+                <button pButton pRipple label="Next" [disabled]="isNextlast" (click)="navigate(true)"
+                    icon="pi pi-fast-forward" iconPos="right"></button>
+            </span>
+        </ng-template>
+
+    </p-card>
+
+</form>

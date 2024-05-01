@@ -1,0 +1,1908 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.2.8",
+  "deps": {
+    "@angular/animations": "^17.0.5",
+    "@angular/cdk": "^17.0.2",
+    "@angular/common": "^17.0.5",
+    "@angular/compiler": "^17.0.5",
+    "@angular/core": "^17.0.5",
+    "@angular/forms": "^17.0.5",
+    "@angular/platform-browser": "^17.0.5",
+    "@angular/platform-browser-dynamic": "^17.0.5",
+    "@angular/router": "^17.0.5",
+    "@fullcalendar/angular": "^6.0.3",
+    "@fullcalendar/core": "^6.0.3",
+    "@fullcalendar/daygrid": "^6.0.3",
+    "@fullcalendar/interaction": "^6.0.3",
+    "@fullcalendar/timegrid": "^6.0.3",
+    "chart.js": "^3.3.2",
+    "primeflex": "^3.3.1",
+    "primeicons": "6.0.1",
+    "primeng": "17.2.0",
+    "quill": "^1.3.7",
+    "rxjs": "~7.8.1",
+    "tslib": "^2.5.0",
+    "zone.js": "~0.14.0",
+    "prismjs": "^1.29.0",
+    "@angular-devkit/build-angular": "^17.0.5",
+    "@angular-devkit/core": "^17.0.5",
+    "@angular-devkit/schematics": "^17.0.5",
+    "@angular/cli": "^17.0.5",
+    "@angular/compiler-cli": "^17.0.5",
+    "@nx/angular": "17.2.8",
+    "@nx/workspace": "17.2.8",
+    "@schematics/angular": "^17.0.5",
+    "@types/jasmine": "~4.3.1",
+    "jasmine-core": "~4.6.0",
+    "karma": "~6.4.2",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "nx": "17.2.8",
+    "typescript": "~5.2.2"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "sakai-ng": [
+        {
+          "file": ".editorconfig",
+          "hash": "6729982560532353059"
+        },
+        {
+          "file": ".eslintrc.json",
+          "hash": "573684000319070816"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "14009333176026953047"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "hash": "5159957801726881588"
+        },
+        {
+          "file": "LICENSE.md",
+          "hash": "3783197066064425266"
+        },
+        {
+          "file": "README.md",
+          "hash": "13735553179347300412"
+        },
+        {
+          "file": "angular.json",
+          "hash": "5388348366307203957"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "10870931098708871028"
+        },
+        {
+          "file": "package.json",
+          "hash": "8607078976204820757",
+          "deps": [
+            "npm:@angular/animations",
+            "npm:@angular/cdk",
+            "npm:@angular/common",
+            "npm:@angular/compiler",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/platform-browser",
+            "npm:@angular/platform-browser-dynamic",
+            "npm:@angular/router",
+            "npm:@fullcalendar/angular",
+            "npm:@fullcalendar/core",
+            "npm:@fullcalendar/daygrid",
+            "npm:@fullcalendar/interaction",
+            "npm:@fullcalendar/timegrid",
+            "npm:chart.js",
+            "npm:primeflex",
+            "npm:primeicons",
+            "npm:primeng",
+            "npm:quill",
+            "npm:rxjs",
+            "npm:tslib",
+            "npm:zone.js",
+            "npm:prismjs",
+            "npm:@angular-devkit/build-angular",
+            "npm:@angular-devkit/core",
+            "npm:@angular-devkit/schematics",
+            "npm:@angular/cli",
+            "npm:@angular/compiler-cli",
+            "npm:@nx/angular",
+            "npm:@nx/workspace",
+            "npm:@schematics/angular",
+            "npm:@types/jasmine",
+            "npm:jasmine-core",
+            "npm:karma",
+            "npm:karma-chrome-launcher",
+            "npm:karma-coverage",
+            "npm:karma-jasmine",
+            "npm:karma-jasmine-html-reporter",
+            "npm:nx",
+            "npm:typescript"
+          ]
+        },
+        {
+          "file": "src/app/app-routing.module.ts",
+          "hash": "7112372629551973830",
+          "deps": [
+            "npm:@angular/router",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/app.component.html",
+          "hash": "17816966185630879015"
+        },
+        {
+          "file": "src/app/app.component.ts",
+          "hash": "16312515489102455563",
+          "deps": [
+            "npm:@angular/core",
+            "npm:primeng",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/app.module.ts",
+          "hash": "7042297102852271810",
+          "deps": [
+            "npm:@angular/platform-browser",
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:primeng",
+            "npm:@angular/cdk",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "src/app/layout/api/menuchangeevent.ts",
+          "hash": "11728595379588189874"
+        },
+        {
+          "file": "src/app/layout/app.footer.component.html",
+          "hash": "4399890366892868537"
+        },
+        {
+          "file": "src/app/layout/app.footer.component.ts",
+          "hash": "7558918287545221261",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/layout/app.layout.component.html",
+          "hash": "4371536098868779513"
+        },
+        {
+          "file": "src/app/layout/app.layout.component.ts",
+          "hash": "14197781602443400814",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/layout/app.layout.module.ts",
+          "hash": "3096578734712598579",
+          "deps": [
+            "npm:primeng",
+            "npm:@angular/core",
+            "npm:@angular/platform-browser",
+            "npm:@angular/forms",
+            "npm:@angular/common",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/layout/app.menu.component.html",
+          "hash": "14617958217281683312"
+        },
+        {
+          "file": "src/app/layout/app.menu.component.ts",
+          "hash": "16214400787775537048",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/layout/app.menu.service.ts",
+          "hash": "3832930074401274508",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/layout/app.menuitem.component.ts",
+          "hash": "10349539446642061947",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/animations",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/layout/app.sidebar.component.html",
+          "hash": "17098489839561932628"
+        },
+        {
+          "file": "src/app/layout/app.sidebar.component.ts",
+          "hash": "17840233762458172978",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/layout/app.topbar.component.html",
+          "hash": "7770996034516509731"
+        },
+        {
+          "file": "src/app/layout/app.topbar.component.ts",
+          "hash": "12427462011618411477",
+          "deps": [
+            "npm:@angular/core",
+            "npm:primeng",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/layout/config/app.config.component.html",
+          "hash": "4163997079937674316"
+        },
+        {
+          "file": "src/app/layout/config/app.config.component.ts",
+          "hash": "17232052201400754858",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/layout/config/config.module.ts",
+          "hash": "3668299232941686872",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:primeng"
+          ]
+        },
+        {
+          "file": "src/app/layout/service/app.layout.service.ts",
+          "hash": "7047843772708075410",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/pages/api/customer.ts",
+          "hash": "17347658412199574719"
+        },
+        {
+          "file": "src/app/pages/api/image.ts",
+          "hash": "16028714548140738093"
+        },
+        {
+          "file": "src/app/pages/api/product.ts",
+          "hash": "11693185549770453983"
+        },
+        {
+          "file": "src/app/pages/components/auth/access/access-routing.module.ts",
+          "hash": "9152868950359627699",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/auth/access/access.component.html",
+          "hash": "14030008116275355914"
+        },
+        {
+          "file": "src/app/pages/components/auth/access/access.component.ts",
+          "hash": "4114392698688109129",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/auth/access/access.module.ts",
+          "hash": "3528783265612572198",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:primeng"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/auth/auth-routing.module.ts",
+          "hash": "17085114901311934489",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/auth/auth.module.ts",
+          "hash": "15414781826637314441",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/auth/error/error-routing.module.ts",
+          "hash": "7009776490064565366",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/auth/error/error.component.html",
+          "hash": "5454861825391215821"
+        },
+        {
+          "file": "src/app/pages/components/auth/error/error.component.ts",
+          "hash": "13013717900339175894",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/auth/error/error.module.ts",
+          "hash": "8522930155496968351",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:primeng"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/auth/login/login-routing.module.ts",
+          "hash": "13109603895411499069",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/auth/login/login.component.html",
+          "hash": "16405376490265142861"
+        },
+        {
+          "file": "src/app/pages/components/auth/login/login.component.ts",
+          "hash": "16115096297183796610",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/router",
+            "npm:primeng"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/auth/login/login.module.ts",
+          "hash": "10935092143673895828",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:primeng",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/dashboard/dashboard-routing.module.ts",
+          "hash": "9085841974718828864",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/dashboard/dashboard.component.html",
+          "hash": "17461565611213731066"
+        },
+        {
+          "file": "src/app/pages/components/dashboard/dashboard.component.ts",
+          "hash": "13758677584916401745",
+          "deps": [
+            "npm:@angular/core",
+            "npm:primeng",
+            "npm:rxjs",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/dashboard/dashboard.module.ts",
+          "hash": "10217270491592152656",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:primeng"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/documentation/documentation-routing.module.ts",
+          "hash": "12359001515313680188",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/documentation/documentation.component.html",
+          "hash": "11448506255413174597"
+        },
+        {
+          "file": "src/app/pages/components/documentation/documentation.component.scss",
+          "hash": "12956906251267639840"
+        },
+        {
+          "file": "src/app/pages/components/documentation/documentation.component.ts",
+          "hash": "2343325484514847816",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/documentation/documentation.module.ts",
+          "hash": "1750978853642199684",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/landing/landing-routing.module.ts",
+          "hash": "12503307343867504441",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/landing/landing.component.html",
+          "hash": "6532075513821013743"
+        },
+        {
+          "file": "src/app/pages/components/landing/landing.component.ts",
+          "hash": "13904261579686028843",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/landing/landing.module.ts",
+          "hash": "9897924708161755275",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:primeng"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/notfound/notfound.component.html",
+          "hash": "10030251814727957108"
+        },
+        {
+          "file": "src/app/pages/components/notfound/notfound.component.ts",
+          "hash": "3039356636269192673",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/primeblocks/blocks/blocks.component.html",
+          "hash": "10684025449273683597"
+        },
+        {
+          "file": "src/app/pages/components/primeblocks/blocks/blocks.component.ts",
+          "hash": "5617405846008162109",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/primeblocks/blockviewer/blockviewer.component.scss",
+          "hash": "997220365642665663"
+        },
+        {
+          "file": "src/app/pages/components/primeblocks/blockviewer/blockviewer.component.ts",
+          "hash": "15526174691112264015",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/primeblocks/primeblocks-routing.module.ts",
+          "hash": "3900301588098469382",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/primeblocks/primeblocks.module.ts",
+          "hash": "9689201783591782604",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:primeng",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/user-setting/user-entry/user-entry-routing.module.ts",
+          "hash": "5987455869680932679",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/user-setting/user-entry/user-entry.component.html",
+          "hash": "2140002299899651537"
+        },
+        {
+          "file": "src/app/pages/components/user-setting/user-entry/user-entry.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/pages/components/user-setting/user-entry/user-entry.component.spec.ts",
+          "hash": "17351586112848512732",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/user-setting/user-entry/user-entry.component.ts",
+          "hash": "14255194266683555687",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/user-setting/user-entry/user-entry.module.ts",
+          "hash": "11579252078330879554",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:primeng"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/user-setting/user-list/user-list-routing.module.ts",
+          "hash": "10668267817113568284",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/user-setting/user-list/user-list.component.html",
+          "hash": "7251235433944820971"
+        },
+        {
+          "file": "src/app/pages/components/user-setting/user-list/user-list.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/pages/components/user-setting/user-list/user-list.component.spec.ts",
+          "hash": "6649351210486759812",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/user-setting/user-list/user-list.component.ts",
+          "hash": "3984945964157943027",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/user-setting/user-list/user-list.module.ts",
+          "hash": "15964138632807267043",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/user-setting/user-setting-routing.module.ts",
+          "hash": "16889837319525117061",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/user-setting/user-setting.module.ts",
+          "hash": "15393557627453108775",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:primeng",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/user-setting/user-setup/user-setup-routing.module.ts",
+          "hash": "13188340144928731313",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/user-setting/user-setup/user-setup.component.html",
+          "hash": "15934218944248800562"
+        },
+        {
+          "file": "src/app/pages/components/user-setting/user-setup/user-setup.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/pages/components/user-setting/user-setup/user-setup.component.spec.ts",
+          "hash": "835251339232665753",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/user-setting/user-setup/user-setup.component.ts",
+          "hash": "10213172798837302193",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/user-setting/user-setup/user-setup.module.ts",
+          "hash": "14989182152091985945",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/utilities/icons/icons.component.html",
+          "hash": "14500316217879257601"
+        },
+        {
+          "file": "src/app/pages/components/utilities/icons/icons.component.ts",
+          "hash": "15171860834521831014",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/utilities/utilities-routing.module.ts",
+          "hash": "7589054418922877848",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/utilities/utilities.module.ts",
+          "hash": "15462626439769396021",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:primeng"
+          ]
+        },
+        {
+          "file": "src/app/pages/service/auth.service.ts",
+          "hash": "12776475444984002792",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/pages/service/country.service.ts",
+          "hash": "3791617178150642189",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/service/customer.service.ts",
+          "hash": "4017965805190856724",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/service/event.service.ts",
+          "hash": "9549768681792420139",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/service/icon.service.ts",
+          "hash": "8691922065907519339",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/pages/service/node.service.ts",
+          "hash": "16286048952591609627",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:primeng"
+          ]
+        },
+        {
+          "file": "src/app/pages/service/photo.service.ts",
+          "hash": "13498088805575409296",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/service/product.service.ts",
+          "hash": "9246361218866446245",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/service/user.service.ts",
+          "hash": "3153744254729973114",
+          "deps": [
+            "npm:rxjs",
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/assets/demo/data/countries.json",
+          "hash": "10274343612367074499"
+        },
+        {
+          "file": "src/assets/demo/data/customers-large.json",
+          "hash": "5931887596709349175"
+        },
+        {
+          "file": "src/assets/demo/data/customers-medium.json",
+          "hash": "6760240998931366957"
+        },
+        {
+          "file": "src/assets/demo/data/customers-small.json",
+          "hash": "3955127413799490627"
+        },
+        {
+          "file": "src/assets/demo/data/files-lazy.json",
+          "hash": "1258894184078367148"
+        },
+        {
+          "file": "src/assets/demo/data/files.json",
+          "hash": "16096901130012358387"
+        },
+        {
+          "file": "src/assets/demo/data/filesystem-lazy.json",
+          "hash": "17429739996478960712"
+        },
+        {
+          "file": "src/assets/demo/data/filesystem.json",
+          "hash": "7597796043975855809"
+        },
+        {
+          "file": "src/assets/demo/data/icons.json",
+          "hash": "10998289223971811906"
+        },
+        {
+          "file": "src/assets/demo/data/photos.json",
+          "hash": "4681068590015796235"
+        },
+        {
+          "file": "src/assets/demo/data/products-mixed.json",
+          "hash": "9483793660018902263"
+        },
+        {
+          "file": "src/assets/demo/data/products-orders-small.json",
+          "hash": "6969650507726664265"
+        },
+        {
+          "file": "src/assets/demo/data/products-orders.json",
+          "hash": "4635780071431033905"
+        },
+        {
+          "file": "src/assets/demo/data/products-small.json",
+          "hash": "12157819284036340101"
+        },
+        {
+          "file": "src/assets/demo/data/products.json",
+          "hash": "14202371111664796976"
+        },
+        {
+          "file": "src/assets/demo/data/scheduleevents.json",
+          "hash": "11891627228883699934"
+        },
+        {
+          "file": "src/assets/demo/images/access/asset-access.svg",
+          "hash": "5053300334090465412"
+        },
+        {
+          "file": "src/assets/demo/images/access/logo-orange.svg",
+          "hash": "114971048163450810"
+        },
+        {
+          "file": "src/assets/demo/images/avatar/amyelsner.png",
+          "hash": "17386816785045805587"
+        },
+        {
+          "file": "src/assets/demo/images/avatar/annafali.png",
+          "hash": "12962593435245241165"
+        },
+        {
+          "file": "src/assets/demo/images/avatar/asiyajavayant.png",
+          "hash": "1823566166237148856"
+        },
+        {
+          "file": "src/assets/demo/images/avatar/bernardodominic.png",
+          "hash": "6204610204729077018"
+        },
+        {
+          "file": "src/assets/demo/images/avatar/elwinsharvill.png",
+          "hash": "2889163988455816300"
+        },
+        {
+          "file": "src/assets/demo/images/avatar/ionibowcher.png",
+          "hash": "8769978370080426421"
+        },
+        {
+          "file": "src/assets/demo/images/avatar/ivanmagalhaes.png",
+          "hash": "10847717138904605941"
+        },
+        {
+          "file": "src/assets/demo/images/avatar/onyamalimba.png",
+          "hash": "8482259945548111094"
+        },
+        {
+          "file": "src/assets/demo/images/avatar/profile.jpg",
+          "hash": "11122750872834294924"
+        },
+        {
+          "file": "src/assets/demo/images/avatar/stephenshaw.png",
+          "hash": "2299762290151446405"
+        },
+        {
+          "file": "src/assets/demo/images/avatar/xuxuefeng.png",
+          "hash": "8972496159603069881"
+        },
+        {
+          "file": "src/assets/demo/images/blocks/hero/hero-1.png",
+          "hash": "13435002475661232967"
+        },
+        {
+          "file": "src/assets/demo/images/blocks/logos/hyper.svg",
+          "hash": "3378329202765618005"
+        },
+        {
+          "file": "src/assets/demo/images/error/asset-error.svg",
+          "hash": "14818213114733917653"
+        },
+        {
+          "file": "src/assets/demo/images/error/logo-error.svg",
+          "hash": "12380235041421171947"
+        },
+        {
+          "file": "src/assets/demo/images/flag/flag_placeholder.png",
+          "hash": "13349885107360637643"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria1.jpg",
+          "hash": "3350631959534272751"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria10.jpg",
+          "hash": "14878156208442955498"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria10s.jpg",
+          "hash": "4457111929879947995"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria11.jpg",
+          "hash": "5034091091335266431"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria11s.jpg",
+          "hash": "10613084079308075553"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria12.jpg",
+          "hash": "10308529976048318639"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria12s.jpg",
+          "hash": "15663126992310273455"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria13.jpg",
+          "hash": "3760660305952928370"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria13s.jpg",
+          "hash": "16418665013400775517"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria14.jpg",
+          "hash": "5652299222489772379"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria14s.jpg",
+          "hash": "65168890848395325"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria15.jpg",
+          "hash": "2982818715095609630"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria15s.jpg",
+          "hash": "12571149397155142250"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria1s.jpg",
+          "hash": "4782115777809681457"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria2.jpg",
+          "hash": "14179371997743998646"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria2s.jpg",
+          "hash": "17854752747903383395"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria3.jpg",
+          "hash": "15328843286409758331"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria3s.jpg",
+          "hash": "7964130257200793903"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria4.jpg",
+          "hash": "468882835301853426"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria4s.jpg",
+          "hash": "13378216670603124570"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria5.jpg",
+          "hash": "14242011093995453396"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria5s.jpg",
+          "hash": "16027521136509789824"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria6.jpg",
+          "hash": "2066505049036494278"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria6s.jpg",
+          "hash": "8708912845987570083"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria7.jpg",
+          "hash": "4151972220100961973"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria7s.jpg",
+          "hash": "11283438021528782517"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria8.jpg",
+          "hash": "8666005254105599897"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria8s.jpg",
+          "hash": "14404346718020222836"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria9.jpg",
+          "hash": "9355949430193123680"
+        },
+        {
+          "file": "src/assets/demo/images/galleria/galleria9s.jpg",
+          "hash": "2253227151901110648"
+        },
+        {
+          "file": "src/assets/demo/images/landing/enterprise.svg",
+          "hash": "14543265172130491193"
+        },
+        {
+          "file": "src/assets/demo/images/landing/free.svg",
+          "hash": "18108847273530509322"
+        },
+        {
+          "file": "src/assets/demo/images/landing/mockup-desktop.svg",
+          "hash": "1989965077876860570"
+        },
+        {
+          "file": "src/assets/demo/images/landing/mockup.svg",
+          "hash": "5164358257871234422"
+        },
+        {
+          "file": "src/assets/demo/images/landing/new-badge.svg",
+          "hash": "16086361162085427442"
+        },
+        {
+          "file": "src/assets/demo/images/landing/peak-logo.svg",
+          "hash": "7955501349728372510"
+        },
+        {
+          "file": "src/assets/demo/images/landing/screen-1.png",
+          "hash": "14856032172837308504"
+        },
+        {
+          "file": "src/assets/demo/images/landing/startup.svg",
+          "hash": "10785708841786277073"
+        },
+        {
+          "file": "src/assets/demo/images/login/avatar.png",
+          "hash": "14253650644155850404"
+        },
+        {
+          "file": "src/assets/demo/images/nature/nature1.jpg",
+          "hash": "7510742615452331588"
+        },
+        {
+          "file": "src/assets/demo/images/nature/nature10.jpg",
+          "hash": "17690558907528766112"
+        },
+        {
+          "file": "src/assets/demo/images/nature/nature11.jpg",
+          "hash": "5268967351979105086"
+        },
+        {
+          "file": "src/assets/demo/images/nature/nature12.jpg",
+          "hash": "13170819388859421815"
+        },
+        {
+          "file": "src/assets/demo/images/nature/nature2.jpg",
+          "hash": "3150407124548994449"
+        },
+        {
+          "file": "src/assets/demo/images/nature/nature3.jpg",
+          "hash": "15201375217997185081"
+        },
+        {
+          "file": "src/assets/demo/images/nature/nature4.jpg",
+          "hash": "3172477919631959855"
+        },
+        {
+          "file": "src/assets/demo/images/nature/nature5.jpg",
+          "hash": "3393302593319925172"
+        },
+        {
+          "file": "src/assets/demo/images/nature/nature6.jpg",
+          "hash": "1744739022870487063"
+        },
+        {
+          "file": "src/assets/demo/images/nature/nature7.jpg",
+          "hash": "2803138684809310702"
+        },
+        {
+          "file": "src/assets/demo/images/nature/nature8.jpg",
+          "hash": "14411920483838367071"
+        },
+        {
+          "file": "src/assets/demo/images/nature/nature9.jpg",
+          "hash": "7905349151317600410"
+        },
+        {
+          "file": "src/assets/demo/images/notfound/logo-blue.svg",
+          "hash": "2668150611523863585"
+        },
+        {
+          "file": "src/assets/demo/images/product/bamboo-watch.jpg",
+          "hash": "12091931128606554982"
+        },
+        {
+          "file": "src/assets/demo/images/product/black-watch.jpg",
+          "hash": "13971782003267724442"
+        },
+        {
+          "file": "src/assets/demo/images/product/blue-band.jpg",
+          "hash": "6577291316117368392"
+        },
+        {
+          "file": "src/assets/demo/images/product/blue-t-shirt.jpg",
+          "hash": "3391951412175502406"
+        },
+        {
+          "file": "src/assets/demo/images/product/bracelet.jpg",
+          "hash": "6986588597440753739"
+        },
+        {
+          "file": "src/assets/demo/images/product/brown-purse.jpg",
+          "hash": "11158362922151006999"
+        },
+        {
+          "file": "src/assets/demo/images/product/chakra-bracelet.jpg",
+          "hash": "2263248636370888830"
+        },
+        {
+          "file": "src/assets/demo/images/product/galaxy-earrings.jpg",
+          "hash": "18105540141308349915"
+        },
+        {
+          "file": "src/assets/demo/images/product/game-controller.jpg",
+          "hash": "6241773598767971332"
+        },
+        {
+          "file": "src/assets/demo/images/product/gaming-set.jpg",
+          "hash": "17310345938399512635"
+        },
+        {
+          "file": "src/assets/demo/images/product/gold-phone-case.jpg",
+          "hash": "10310432017472187569"
+        },
+        {
+          "file": "src/assets/demo/images/product/green-earbuds.jpg",
+          "hash": "8670622180416481622"
+        },
+        {
+          "file": "src/assets/demo/images/product/green-t-shirt.jpg",
+          "hash": "11712190231302717183"
+        },
+        {
+          "file": "src/assets/demo/images/product/grey-t-shirt.jpg",
+          "hash": "5629784087334201127"
+        },
+        {
+          "file": "src/assets/demo/images/product/headphones.jpg",
+          "hash": "3492608353665307902"
+        },
+        {
+          "file": "src/assets/demo/images/product/light-green-t-shirt.jpg",
+          "hash": "3447398057264360652"
+        },
+        {
+          "file": "src/assets/demo/images/product/lime-band.jpg",
+          "hash": "9912437052909937563"
+        },
+        {
+          "file": "src/assets/demo/images/product/mini-speakers.jpg",
+          "hash": "16077146461009137426"
+        },
+        {
+          "file": "src/assets/demo/images/product/painted-phone-case.jpg",
+          "hash": "13452981336113654598"
+        },
+        {
+          "file": "src/assets/demo/images/product/pink-band.jpg",
+          "hash": "1019053065376724286"
+        },
+        {
+          "file": "src/assets/demo/images/product/pink-purse.jpg",
+          "hash": "1497311072239701677"
+        },
+        {
+          "file": "src/assets/demo/images/product/product-placeholder.svg",
+          "hash": "16120591621043271387"
+        },
+        {
+          "file": "src/assets/demo/images/product/purple-band.jpg",
+          "hash": "14848651277706958980"
+        },
+        {
+          "file": "src/assets/demo/images/product/purple-gemstone-necklace.jpg",
+          "hash": "6446363807458224170"
+        },
+        {
+          "file": "src/assets/demo/images/product/purple-t-shirt.jpg",
+          "hash": "9042566071321887730"
+        },
+        {
+          "file": "src/assets/demo/images/product/shoes.jpg",
+          "hash": "5676917273995404868"
+        },
+        {
+          "file": "src/assets/demo/images/product/sneakers.jpg",
+          "hash": "613823608821060383"
+        },
+        {
+          "file": "src/assets/demo/images/product/teal-t-shirt.jpg",
+          "hash": "9405675924634037223"
+        },
+        {
+          "file": "src/assets/demo/images/product/yellow-earbuds.jpg",
+          "hash": "9547408551260946546"
+        },
+        {
+          "file": "src/assets/demo/images/product/yoga-mat.jpg",
+          "hash": "15802420833612257160"
+        },
+        {
+          "file": "src/assets/demo/images/product/yoga-set.jpg",
+          "hash": "421130455594430884"
+        },
+        {
+          "file": "src/assets/demo/styles/badges.css",
+          "hash": "8913459150849575732"
+        },
+        {
+          "file": "src/assets/demo/styles/badges.scss",
+          "hash": "6780078589025076125"
+        },
+        {
+          "file": "src/assets/demo/styles/code.css",
+          "hash": "1303336703141561784"
+        },
+        {
+          "file": "src/assets/demo/styles/code.scss",
+          "hash": "12173855044222515212"
+        },
+        {
+          "file": "src/assets/demo/styles/flags/flags.css",
+          "hash": "15647695890704200128"
+        },
+        {
+          "file": "src/assets/demo/styles/flags/flags_responsive.png",
+          "hash": "15136929901807486171"
+        },
+        {
+          "file": "src/assets/layout/images/banner-primeblocks-dark.png",
+          "hash": "6442330171295803977"
+        },
+        {
+          "file": "src/assets/layout/images/banner-primeblocks.png",
+          "hash": "17922037811811439240"
+        },
+        {
+          "file": "src/assets/layout/images/logo-dark.svg",
+          "hash": "578785531351853268"
+        },
+        {
+          "file": "src/assets/layout/images/logo-white.svg",
+          "hash": "16096430787415135453"
+        },
+        {
+          "file": "src/assets/layout/images/themes/arya-blue.png",
+          "hash": "6182167901315915097"
+        },
+        {
+          "file": "src/assets/layout/images/themes/arya-green.png",
+          "hash": "18304397167899421000"
+        },
+        {
+          "file": "src/assets/layout/images/themes/arya-orange.png",
+          "hash": "17594894199260554464"
+        },
+        {
+          "file": "src/assets/layout/images/themes/arya-purple.png",
+          "hash": "6777651120246939699"
+        },
+        {
+          "file": "src/assets/layout/images/themes/bootstrap4-dark-blue.svg",
+          "hash": "11988045593770071312"
+        },
+        {
+          "file": "src/assets/layout/images/themes/bootstrap4-dark-purple.svg",
+          "hash": "15148797263212550016"
+        },
+        {
+          "file": "src/assets/layout/images/themes/bootstrap4-light-blue.svg",
+          "hash": "6856119058235188174"
+        },
+        {
+          "file": "src/assets/layout/images/themes/bootstrap4-light-purple.svg",
+          "hash": "12884006804196283242"
+        },
+        {
+          "file": "src/assets/layout/images/themes/fluent-light.png",
+          "hash": "6943112090144936375"
+        },
+        {
+          "file": "src/assets/layout/images/themes/lara-dark-blue.png",
+          "hash": "17928179592502594725"
+        },
+        {
+          "file": "src/assets/layout/images/themes/lara-dark-indigo.png",
+          "hash": "2922090286731085918"
+        },
+        {
+          "file": "src/assets/layout/images/themes/lara-dark-purple.png",
+          "hash": "5351082377911090351"
+        },
+        {
+          "file": "src/assets/layout/images/themes/lara-dark-teal.png",
+          "hash": "186005304712048968"
+        },
+        {
+          "file": "src/assets/layout/images/themes/lara-light-blue.png",
+          "hash": "7517386759563872306"
+        },
+        {
+          "file": "src/assets/layout/images/themes/lara-light-indigo.png",
+          "hash": "8526448573115695183"
+        },
+        {
+          "file": "src/assets/layout/images/themes/lara-light-purple.png",
+          "hash": "4023686356222283567"
+        },
+        {
+          "file": "src/assets/layout/images/themes/lara-light-teal.png",
+          "hash": "16585763862903347276"
+        },
+        {
+          "file": "src/assets/layout/images/themes/luna-amber.png",
+          "hash": "2744812512844092740"
+        },
+        {
+          "file": "src/assets/layout/images/themes/luna-blue.png",
+          "hash": "2509724518161371333"
+        },
+        {
+          "file": "src/assets/layout/images/themes/luna-green.png",
+          "hash": "15673363411566208742"
+        },
+        {
+          "file": "src/assets/layout/images/themes/luna-pink.png",
+          "hash": "12545381413732588144"
+        },
+        {
+          "file": "src/assets/layout/images/themes/md-dark-deeppurple.svg",
+          "hash": "17396756040792302159"
+        },
+        {
+          "file": "src/assets/layout/images/themes/md-dark-indigo.svg",
+          "hash": "16801142871151102778"
+        },
+        {
+          "file": "src/assets/layout/images/themes/md-light-deeppurple.svg",
+          "hash": "7562848297230948496"
+        },
+        {
+          "file": "src/assets/layout/images/themes/md-light-indigo.svg",
+          "hash": "18122591256530755707"
+        },
+        {
+          "file": "src/assets/layout/images/themes/saga-blue.png",
+          "hash": "9846919934632584452"
+        },
+        {
+          "file": "src/assets/layout/images/themes/saga-green.png",
+          "hash": "7871650375570261330"
+        },
+        {
+          "file": "src/assets/layout/images/themes/saga-orange.png",
+          "hash": "1378270000837644676"
+        },
+        {
+          "file": "src/assets/layout/images/themes/saga-purple.png",
+          "hash": "911385800178273261"
+        },
+        {
+          "file": "src/assets/layout/images/themes/tailwind-light.png",
+          "hash": "60831634540614233"
+        },
+        {
+          "file": "src/assets/layout/images/themes/vela-blue.png",
+          "hash": "13364902033637595401"
+        },
+        {
+          "file": "src/assets/layout/images/themes/vela-green.png",
+          "hash": "8732071626357186556"
+        },
+        {
+          "file": "src/assets/layout/images/themes/vela-orange.png",
+          "hash": "4890089423920667407"
+        },
+        {
+          "file": "src/assets/layout/images/themes/vela-purple.png",
+          "hash": "5906960554938787743"
+        },
+        {
+          "file": "src/assets/layout/styles/layout/_config.scss",
+          "hash": "14557048670399507966"
+        },
+        {
+          "file": "src/assets/layout/styles/layout/_content.scss",
+          "hash": "6179283857182798342"
+        },
+        {
+          "file": "src/assets/layout/styles/layout/_footer.scss",
+          "hash": "2921497336315965842"
+        },
+        {
+          "file": "src/assets/layout/styles/layout/_main.scss",
+          "hash": "5272166130699979674"
+        },
+        {
+          "file": "src/assets/layout/styles/layout/_menu.scss",
+          "hash": "18425995711399943583"
+        },
+        {
+          "file": "src/assets/layout/styles/layout/_mixins.scss",
+          "hash": "10029929831412129986"
+        },
+        {
+          "file": "src/assets/layout/styles/layout/_preloading.scss",
+          "hash": "17275784241804741023"
+        },
+        {
+          "file": "src/assets/layout/styles/layout/_responsive.scss",
+          "hash": "12203689461053025223"
+        },
+        {
+          "file": "src/assets/layout/styles/layout/_topbar.scss",
+          "hash": "1800572206458207739"
+        },
+        {
+          "file": "src/assets/layout/styles/layout/_typography.scss",
+          "hash": "4474341461981840867"
+        },
+        {
+          "file": "src/assets/layout/styles/layout/_utils.scss",
+          "hash": "8307200133226973246"
+        },
+        {
+          "file": "src/assets/layout/styles/layout/_variables.scss",
+          "hash": "7980974053433306154"
+        },
+        {
+          "file": "src/assets/layout/styles/layout/layout.css",
+          "hash": "8665999231030984526"
+        },
+        {
+          "file": "src/assets/layout/styles/layout/layout.scss",
+          "hash": "1738984884606314770"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/arya-blue/theme.css",
+          "hash": "7305179405376814517"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/arya-green/theme.css",
+          "hash": "4562403453526872959"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/arya-orange/theme.css",
+          "hash": "1297081912945445025"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/arya-purple/theme.css",
+          "hash": "8234277508163394131"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/bootstrap4-dark-blue/theme.css",
+          "hash": "7432189033787416850"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/bootstrap4-dark-purple/theme.css",
+          "hash": "13748430091942021039"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/bootstrap4-light-blue/theme.css",
+          "hash": "17136897685934141290"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/bootstrap4-light-purple/theme.css",
+          "hash": "15248273282134127685"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/fluent-light/theme.css",
+          "hash": "9521135583087783400"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/lara-dark-blue/theme.css",
+          "hash": "5551917473343121251"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/lara-dark-indigo/theme.css",
+          "hash": "14785992746158456707"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/lara-dark-purple/theme.css",
+          "hash": "14731051966295139057"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/lara-dark-teal/theme.css",
+          "hash": "18216895260490726747"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/lara-light-blue/theme.css",
+          "hash": "3991678307190979125"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/lara-light-indigo/theme.css",
+          "hash": "9475492278706303448"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/lara-light-purple/theme.css",
+          "hash": "13803518862269088279"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/lara-light-teal/theme.css",
+          "hash": "12653501392990950595"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-dark-deeppurple/fonts/roboto-v20-latin-ext_latin-500.woff",
+          "hash": "17669631552345919670"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-dark-deeppurple/fonts/roboto-v20-latin-ext_latin-500.woff2",
+          "hash": "10236125128007164201"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-dark-deeppurple/fonts/roboto-v20-latin-ext_latin-700.woff",
+          "hash": "1589262501792557888"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-dark-deeppurple/fonts/roboto-v20-latin-ext_latin-700.woff2",
+          "hash": "8446898574737259649"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-dark-deeppurple/fonts/roboto-v20-latin-ext_latin-regular.woff",
+          "hash": "8447820771579553891"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-dark-deeppurple/fonts/roboto-v20-latin-ext_latin-regular.woff2",
+          "hash": "13862398426191697625"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-dark-deeppurple/theme.css",
+          "hash": "2176477941273639723"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-dark-indigo/fonts/roboto-v20-latin-ext_latin-500.woff",
+          "hash": "17669631552345919670"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-dark-indigo/fonts/roboto-v20-latin-ext_latin-500.woff2",
+          "hash": "10236125128007164201"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-dark-indigo/fonts/roboto-v20-latin-ext_latin-700.woff",
+          "hash": "1589262501792557888"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-dark-indigo/fonts/roboto-v20-latin-ext_latin-700.woff2",
+          "hash": "8446898574737259649"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-dark-indigo/fonts/roboto-v20-latin-ext_latin-regular.woff",
+          "hash": "8447820771579553891"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-dark-indigo/fonts/roboto-v20-latin-ext_latin-regular.woff2",
+          "hash": "13862398426191697625"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-dark-indigo/theme.css",
+          "hash": "968576694031653899"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-light-deeppurple/fonts/roboto-v20-latin-ext_latin-500.woff",
+          "hash": "17669631552345919670"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-light-deeppurple/fonts/roboto-v20-latin-ext_latin-500.woff2",
+          "hash": "10236125128007164201"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-light-deeppurple/fonts/roboto-v20-latin-ext_latin-700.woff",
+          "hash": "1589262501792557888"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-light-deeppurple/fonts/roboto-v20-latin-ext_latin-700.woff2",
+          "hash": "8446898574737259649"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-light-deeppurple/fonts/roboto-v20-latin-ext_latin-regular.woff",
+          "hash": "8447820771579553891"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-light-deeppurple/fonts/roboto-v20-latin-ext_latin-regular.woff2",
+          "hash": "13862398426191697625"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-light-deeppurple/theme.css",
+          "hash": "15927017852259850624"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-light-indigo/fonts/roboto-v20-latin-ext_latin-500.woff",
+          "hash": "17669631552345919670"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-light-indigo/fonts/roboto-v20-latin-ext_latin-500.woff2",
+          "hash": "10236125128007164201"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-light-indigo/fonts/roboto-v20-latin-ext_latin-700.woff",
+          "hash": "1589262501792557888"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-light-indigo/fonts/roboto-v20-latin-ext_latin-700.woff2",
+          "hash": "8446898574737259649"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-light-indigo/fonts/roboto-v20-latin-ext_latin-regular.woff",
+          "hash": "8447820771579553891"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-light-indigo/fonts/roboto-v20-latin-ext_latin-regular.woff2",
+          "hash": "13862398426191697625"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/md-light-indigo/theme.css",
+          "hash": "15883998816083216566"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-dark-deeppurple/fonts/roboto-v20-latin-ext_latin-500.woff",
+          "hash": "17669631552345919670"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-dark-deeppurple/fonts/roboto-v20-latin-ext_latin-500.woff2",
+          "hash": "10236125128007164201"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-dark-deeppurple/fonts/roboto-v20-latin-ext_latin-700.woff",
+          "hash": "1589262501792557888"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-dark-deeppurple/fonts/roboto-v20-latin-ext_latin-700.woff2",
+          "hash": "8446898574737259649"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-dark-deeppurple/fonts/roboto-v20-latin-ext_latin-regular.woff",
+          "hash": "8447820771579553891"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-dark-deeppurple/fonts/roboto-v20-latin-ext_latin-regular.woff2",
+          "hash": "13862398426191697625"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-dark-deeppurple/theme.css",
+          "hash": "9635123077371401609"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-dark-indigo/fonts/roboto-v20-latin-ext_latin-500.woff",
+          "hash": "17669631552345919670"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-dark-indigo/fonts/roboto-v20-latin-ext_latin-500.woff2",
+          "hash": "10236125128007164201"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-dark-indigo/fonts/roboto-v20-latin-ext_latin-700.woff",
+          "hash": "1589262501792557888"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-dark-indigo/fonts/roboto-v20-latin-ext_latin-700.woff2",
+          "hash": "8446898574737259649"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-dark-indigo/fonts/roboto-v20-latin-ext_latin-regular.woff",
+          "hash": "8447820771579553891"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-dark-indigo/fonts/roboto-v20-latin-ext_latin-regular.woff2",
+          "hash": "13862398426191697625"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-dark-indigo/theme.css",
+          "hash": "12886679161173920879"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-light-deeppurple/fonts/roboto-v20-latin-ext_latin-500.woff",
+          "hash": "17669631552345919670"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-light-deeppurple/fonts/roboto-v20-latin-ext_latin-500.woff2",
+          "hash": "10236125128007164201"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-light-deeppurple/fonts/roboto-v20-latin-ext_latin-700.woff",
+          "hash": "1589262501792557888"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-light-deeppurple/fonts/roboto-v20-latin-ext_latin-700.woff2",
+          "hash": "8446898574737259649"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-light-deeppurple/fonts/roboto-v20-latin-ext_latin-regular.woff",
+          "hash": "8447820771579553891"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-light-deeppurple/fonts/roboto-v20-latin-ext_latin-regular.woff2",
+          "hash": "13862398426191697625"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-light-deeppurple/theme.css",
+          "hash": "15809184052557856285"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-light-indigo/fonts/roboto-v20-latin-ext_latin-500.woff",
+          "hash": "17669631552345919670"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-light-indigo/fonts/roboto-v20-latin-ext_latin-500.woff2",
+          "hash": "10236125128007164201"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-light-indigo/fonts/roboto-v20-latin-ext_latin-700.woff",
+          "hash": "1589262501792557888"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-light-indigo/fonts/roboto-v20-latin-ext_latin-700.woff2",
+          "hash": "8446898574737259649"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-light-indigo/fonts/roboto-v20-latin-ext_latin-regular.woff",
+          "hash": "8447820771579553891"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-light-indigo/fonts/roboto-v20-latin-ext_latin-regular.woff2",
+          "hash": "13862398426191697625"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/mdc-light-indigo/theme.css",
+          "hash": "9610272083866044824"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/saga-blue/theme.css",
+          "hash": "16478584055744858874"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/saga-green/theme.css",
+          "hash": "13537764084121686100"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/saga-orange/theme.css",
+          "hash": "17224256554126845258"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/saga-purple/theme.css",
+          "hash": "14132172781139039445"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/tailwind-light/fonts/Inter-Bold.woff",
+          "hash": "16620565188860329270"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/tailwind-light/fonts/Inter-Bold.woff2",
+          "hash": "15331877897630287278"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/tailwind-light/fonts/Inter-Light.woff",
+          "hash": "11990991682027583110"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/tailwind-light/fonts/Inter-Light.woff2",
+          "hash": "5919903665261338269"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/tailwind-light/fonts/Inter-Medium.woff",
+          "hash": "8886564849632156968"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/tailwind-light/fonts/Inter-Medium.woff2",
+          "hash": "8966643655284872463"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/tailwind-light/fonts/Inter-Regular.woff",
+          "hash": "6440773930659690953"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/tailwind-light/fonts/Inter-Regular.woff2",
+          "hash": "9936960427371990666"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/tailwind-light/fonts/Inter-SemiBold.woff",
+          "hash": "15138645273078633799"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/tailwind-light/fonts/Inter-SemiBold.woff2",
+          "hash": "10223641688160716717"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/tailwind-light/theme.css",
+          "hash": "493183776695920981"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/vela-blue/theme.css",
+          "hash": "14334216744804398155"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/vela-green/theme.css",
+          "hash": "4480310679454885284"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/vela-orange/theme.css",
+          "hash": "17253080636011134297"
+        },
+        {
+          "file": "src/assets/layout/styles/theme/vela-purple/theme.css",
+          "hash": "16542910529466057623"
+        },
+        {
+          "file": "src/environments/environment.prod.ts",
+          "hash": "5406836414239361753"
+        },
+        {
+          "file": "src/environments/environment.ts",
+          "hash": "17257449467550196988"
+        },
+        {
+          "file": "src/favicon.ico",
+          "hash": "3464744996580215640"
+        },
+        {
+          "file": "src/index.html",
+          "hash": "2230260814632477840"
+        },
+        {
+          "file": "src/main.ts",
+          "hash": "10677612470474905821",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/platform-browser-dynamic"
+          ]
+        },
+        {
+          "file": "src/styles.scss",
+          "hash": "6742914404369811130"
+        },
+        {
+          "file": "src/test.ts",
+          "hash": "1590235246187698726",
+          "deps": [
+            "npm:zone.js",
+            "npm:@angular/core",
+            "npm:@angular/platform-browser-dynamic"
+          ]
+        },
+        {
+          "file": "tsconfig.app.json",
+          "hash": "14047950835657422356"
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "5485967829514203617"
+        },
+        {
+          "file": "tsconfig.spec.json",
+          "hash": "8585328210828579729"
+        }
+      ]
+    },
+    "nonProjectFiles": []
+  }
+}

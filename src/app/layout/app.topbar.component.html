@@ -1,0 +1,59 @@
+<div class="layout-topbar">
+    <a class="layout-topbar-logo" routerLink="">
+        <!-- <img src="assets/layout/images/{{layoutService.config().colorScheme === 'light' ? 'logo-dark' : 'logo-white'}}.svg" alt="logo"> -->
+        <span>Barangay Management System</span>
+    </a>
+
+    <button #menubutton class="p-link layout-menu-button layout-topbar-button" (click)="layoutService.onMenuToggle()">
+        <i class="pi pi-bars"></i>
+    </button>
+
+    <button #topbarmenubutton class="p-link layout-topbar-menu-button layout-topbar-button"
+        (click)="layoutService.showProfileSidebar()">
+        <i class="pi pi-ellipsis-v"></i>
+    </button>
+
+    <div #topbarmenu class="layout-topbar-menu"
+        [ngClass]="{'layout-topbar-menu-mobile-active': layoutService.state.profileSidebarVisible}">
+        <!-- <button class="p-link layout-topbar-button">
+            <i class="pi pi-user"></i>
+            <span>Profile</span>
+        </button> -->
+
+        <p-menu #menu [model]="plainMenuItems" [popup]="true"></p-menu>
+        <button class="p-link layout-topbar-button" (click)="menu.toggle($event)">
+            <!-- <i class="pi pi-sign-out"></i> -->
+            <i class="pi pi-user"></i>
+            <span>Logout</span>
+        </button>
+    </div>
+
+
+
+</div>
+
+
+<div>
+    <p-toast position="top-center" [life]="1500"></p-toast>
+    <p-dialog header="Change password" [(visible)]="visible" [modal]="true" [style]="{ width: '33rem' }"
+        [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }" [autoZIndex]="true">
+        <div>
+
+            <div class="w-full">
+                <label for="password" class="block text-900 text-lg font-medium mb-2">New Password</label>
+                <p-password id="password" [toggleMask]="true" placeholder="New Password" styleClass="mb-5"
+                    inputStyleClass="w-full p-3 md:w-30rem" standalone="true" [(ngModel)]="password"></p-password>
+
+                <label for="retypePassword" class="block text-900 font-medium text-lg mb-2">Re-type new
+                    Password</label>
+                <p-password id="retypePassword" [toggleMask]="true" placeholder="Re-type new Password" styleClass="mb-5"
+                    inputStyleClass="w-full p-3 md:w-30rem" standalone="true" [(ngModel)]="reTypePassword"></p-password>
+            </div>
+
+            <button pButton pRipple label="Change Password" class="w-full p-3 md:w-30rem"
+                (click)="changePassword()"></button>
+
+        </div>
+
+    </p-dialog>
+</div>

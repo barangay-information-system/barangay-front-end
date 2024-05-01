@@ -1,0 +1,165 @@
+<div class="grid">
+    <div class="col-12 lg:col-6 xl:col-3">
+        <div class="card mb-0">
+            <div class="flex justify-content-between mb-3">
+                <div>
+                    <span class="block text-500 font-medium mb-3">Residents</span>
+                    <div class="text-900 font-medium text-xl">152</div>
+                </div>
+                <div class="flex align-items-center justify-content-center bg-blue-100 border-round"
+                    [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <i class="pi pi-users text-blue-500 text-xl"></i>
+                </div>
+            </div>
+            <!-- <span class="text-green-500 font-medium">24 new </span>
+            <span class="text-500">since last visit</span> -->
+        </div>
+    </div>
+    <div class="col-12 lg:col-6 xl:col-3">
+        <div class="card mb-0">
+            <div class="flex justify-content-between mb-3">
+                <div>
+                    <span class="block text-500 font-medium mb-3">Residents</span>
+                    <div class="text-900 font-medium text-xl">152</div>
+                </div>
+                <div class="flex align-items-center justify-content-center bg-blue-100 border-round"
+                    [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <i class="pi pi-users text-blue-500 text-xl"></i>
+                </div>
+            </div>
+            <!-- <span class="text-green-500 font-medium">24 new </span>
+            <span class="text-500">since last visit</span> -->
+        </div>
+    </div>
+    <div class="col-12 lg:col-6 xl:col-3">
+        <div class="card mb-0">
+            <div class="flex justify-content-between mb-3">
+                <div>
+                    <span class="block text-500 font-medium mb-3">Residents</span>
+                    <div class="text-900 font-medium text-xl">152</div>
+                </div>
+                <div class="flex align-items-center justify-content-center bg-blue-100 border-round"
+                    [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <i class="pi pi-users text-blue-500 text-xl"></i>
+                </div>
+            </div>
+            <!-- <span class="text-green-500 font-medium">24 new </span>
+            <span class="text-500">since last visit</span> -->
+        </div>
+    </div>
+    <div class="col-12 lg:col-6 xl:col-3">
+        <div class="card mb-0">
+            <div class="flex justify-content-between mb-3">
+                <div>
+                    <span class="block text-500 font-medium mb-3">Residents</span>
+                    <div class="text-900 font-medium text-xl">152</div>
+                </div>
+                <div class="flex align-items-center justify-content-center bg-blue-100 border-round"
+                    [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <i class="pi pi-users text-blue-500 text-xl"></i>
+                </div>
+            </div>
+            <!-- <span class="text-green-500 font-medium">24 new </span>
+            <span class="text-500">since last visit</span> -->
+        </div>
+    </div>
+
+    <div class="col-12 xl:col-6">
+        <div class="card">
+            <h5>Population By Purok</h5>
+            <p-chart type="line" [data]="chartData" [options]="chartOptions"></p-chart>
+        </div>
+        <div class="card">
+            <h5>Recent Sales</h5>
+            <p-table [value]="products" [paginator]="true" [rows]="5" responsiveLayout="scroll">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>Image</th>
+                        <th pSortableColumn="name">Name <p-sortIcon field="name"></p-sortIcon></th>
+                        <th pSortableColumn="price">Price <p-sortIcon field="price"></p-sortIcon></th>
+                        <th>View</th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-product>
+                    <tr>
+                        <td style="width: 15%; min-width: 5rem;">
+                            <img src="assets/demo/images/product/{{product.image}}" class="shadow-4"
+                                alt="{{product.name}}" width="50">
+                        </td>
+                        <td style="width: 35%; min-width: 7rem;">{{product.name}}</td>
+                        <td style="width: 35%; min-width: 8rem;">{{product.price | currency:'USD'}}</td>
+                        <td style="width: 15%;">
+                            <button pButton pRipple type="button" icon="pi pi-search"
+                                class="p-button p-component p-button-text p-button-icon-only"></button>
+                        </td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+    </div>
+
+    <div class="col-12 xl:col-6">
+        <div class="card">
+            <h5>Number of Household by Purok</h5>
+            <p-chart type="line" [data]="chartData" [options]="chartOptions"></p-chart>
+        </div>
+        <div class="card">
+            <h5>Recent Sales</h5>
+            <p-table [value]="products" [paginator]="true" [rows]="5" responsiveLayout="scroll">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>Image</th>
+                        <th pSortableColumn="name">Name <p-sortIcon field="name"></p-sortIcon></th>
+                        <th pSortableColumn="price">Price <p-sortIcon field="price"></p-sortIcon></th>
+                        <th>View</th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-product>
+                    <tr>
+                        <td style="width: 15%; min-width: 5rem;">
+                            <img src="assets/demo/images/product/{{product.image}}" class="shadow-4"
+                                alt="{{product.name}}" width="50">
+                        </td>
+                        <td style="width: 35%; min-width: 7rem;">{{product.name}}</td>
+                        <td style="width: 35%; min-width: 8rem;">{{product.price | currency:'USD'}}</td>
+                        <td style="width: 15%;">
+                            <button pButton pRipple type="button" icon="pi pi-search"
+                                class="p-button p-component p-button-text p-button-icon-only"></button>
+                        </td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<!-- BEGIN change password -->
+<p-toast position="top-center"></p-toast>
+<p-dialog [(visible)]="display" [modal]="true" [style]="{ width: '40rem' }"
+    [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }" [autoZIndex]="true" [closable]="false" [draggable]="false">
+    <div class="w-full">
+        <label class="block text-900 text-2xl font-medium mb-2">You are currently using a default password.</label>
+        <div class="flex align-items-center">
+            <label class="block text-900 text-sm font-medium mb-2">You are currently using a default password.</label>
+        </div>
+        <br>
+        <label for="password" class="block text-900 text-xl font-medium mb-2">New Password</label>
+        <p-password id="password" [toggleMask]="true" placeholder="New Password" styleClass=" w-full mb-5"
+            inputStyleClass="w-full p-3" standalone="true" [(ngModel)]="password"></p-password>
+        <label for="retypePassword" class="block text-900 font-medium text-xl mb-2">Re-type new
+            Password</label>
+        <p-password id="retypePassword" [toggleMask]="true" placeholder="Re-type new Password" styleClass="mb-5 w-full"
+            inputStyleClass="w-full p-3" standalone="true" [(ngModel)]="reTypePassword"></p-password>
+
+        <button pButton pRipple label="Change Password" class="w-full p-3" (click)="changePassword()"></button>
+    </div>
+</p-dialog>
+<!-- END change password -->

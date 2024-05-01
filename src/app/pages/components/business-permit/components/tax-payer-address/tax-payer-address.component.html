@@ -1,0 +1,78 @@
+<form ngForm>
+    <div class="p-fluid grid">
+        <div class="col-12">
+            <div class="field">
+                <label htmlFor="region">Region</label>
+                <p-dropdown id="region" [options]="region" optionLabel="region" [showClear]="false" [filter]="true"
+                    filterBy="region" placeholder="Select a region" (onChange)="selectedRegion($event)">
+                </p-dropdown>
+            </div>
+            <div class="field">
+                <div class="grid">
+                    <div class="md:col-6">
+                        <label htmlFor="address">Province</label>
+                        <p-dropdown id="province" [options]="province" optionLabel="province" [showClear]="false"
+                            [filter]="true" filterBy="province" placeholder="Select a Province"
+                            (onChange)="selectedProvince($event)">
+                        </p-dropdown>
+                    </div>
+                    <div class="md:col-6">
+                        <label htmlFor="city">City/Municipality</label>
+                        <p-dropdown id="city" [options]="city_mun" optionLabel="city_mun" [showClear]="false"
+                            [filter]="true" filterBy="city_mun" placeholder="Select a City/Municipality"
+                            (onChange)="selectedCityMunicipality($event)">
+                        </p-dropdown>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <div class="grid">
+                    <div class="md:col-6">
+                        <label htmlFor="barangay">Barangay</label>
+                        <p-dropdown id="barangay" [options]="barangay" optionLabel="barangay" [showClear]="false"
+                            [filter]="true" filterBy="barangay" placeholder="Select a Barangay"
+                            (onChange)="selectedBarangay($event)">
+                        </p-dropdown>
+                    </div>
+                    <div class="md:col-6">
+                        <label htmlFor="zipcode">Zip code</label>
+                        <input pInputText id="zipcode" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <div class="grid">
+                    <div class="md:col-6">
+                        <label htmlFor="address">House / Bldg. No.</label>
+                        <input pInputText id="house_bldng_no" type="text" />
+                    </div>
+                    <div class="md:col-6">
+                        <label htmlFor="city">Building Name</label>
+                        <input pInputText id="building_name" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <div class="grid">
+                    <div class="md:col-6">
+                        <label htmlFor="address">Lot No.</label>
+                        <input pInputText id="lot_no" type="text" />
+                    </div>
+                    <div class="md:col-6">
+                        <label htmlFor="city">Block</label>
+                        <input pInputText id="block_no" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label htmlFor="address">Street</label>
+                <input pInputText id="street" type="text" />
+            </div>
+            <div class="field">
+                <label htmlFor="address">Subdivision</label>
+                <input pInputText id="subdivision" type="text" />
+            </div>
+        </div>
+    </div>
+
+</form>

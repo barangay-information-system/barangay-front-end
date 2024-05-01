@@ -1,0 +1,52 @@
+<form ngForm [formGroup]="form">
+    <div class="grid">
+        <p-panel header="User Information" class="col-12">
+            <div class="p-fluid p-formgrid grid">
+                <div class="field col-3">
+                    <label htmlFor="userCode">User Code</label>
+                    <input pInputText id="userCode" type="text" formControlName="code" />
+                </div>
+                <div class="field col-9">
+                    <label htmlFor="employeeId">Employee</label>
+                    <p-dropdown id="employee" optionLabel="name" formControlName="employee" [options]="employees"
+                        [filter]="true" filterBy="name" [showClear]="true"></p-dropdown>
+                </div>
+            </div>
+        </p-panel>
+        <p-panel header="User Details" class="col-12">
+            <div class="p-fluid p-formgrid grid">
+                <div class="col-6">
+                    <label htmlFor="typLevel">Type/Level</label>
+                    <p-dropdown id="typeLevel" [options]="enums.userTypes" optionLabel="typeLevel" [showClear]="true"
+                        [filter]="true" filterBy="typeLevel" placeholder="Select a Type or Level." formControlName="typeLevel">
+                    </p-dropdown>
+                </div>
+                <div class="col-6">
+                    <label htmlFor="userLevel">User Level</label>
+                    <p-dropdown id="userLevel" formControlName="userrole" [options]="userRoles" optionLabel="name"
+                        [showClear]="true" [filter]="true" filterBy="name" placeholder="Select a User Level.">
+                    </p-dropdown>
+                </div>
+                <div class="col-12">
+                    <label htmlFor="userName">Username</label>
+                    <input pInputText id="userName" type="text" formControlName="username" />
+                </div>
+                <div class="col-6">
+                    <label htmlFor="newPassword">Password</label>
+                    <p-password id="newPassword" [toggleMask]="true" placeholder="Password" styleClass="mb-5"
+                        inputStyleClass="w-full" standalone="true" formControlName="password"></p-password>
+                </div>
+                <div class="col-6">
+                    <label htmlFor="reTypePassword">Confirm Password</label>
+                    <p-password id="reTypePassword" [toggleMask]="true" placeholder="Confirm Password" styleClass="mb-5"
+                        inputStyleClass="w-full" standalone="true" formControlName="confirmPassword"></p-password>
+                </div>
+            </div>
+        </p-panel>
+        <div class="flex w-full justify-content-end gap-4">
+            <p-button type="button" [label]="setActionSelector" icon="pi pi-times" (onClick)="save()"></p-button>
+            <p-button type="button" label="Cancel" icon="pi pi-times" (onClick)="close()"
+                severity="secondary"></p-button>
+        </div>
+    </div>
+</form>

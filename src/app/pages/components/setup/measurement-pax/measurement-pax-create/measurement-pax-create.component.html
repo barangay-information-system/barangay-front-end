@@ -1,0 +1,16 @@
+<form ngForm [formGroup]="form">
+    <div class="grid w-full">
+        <div class="col-12">
+            <div class="p-fluid p-formgrid grid">
+                <div class="field col-6">
+                    <label htmlFor="code">Code</label>
+                    <input pInputText id="code" type="text" formControlName="code" />
+                </div>
+                <div class="field col-12">
+                    <label htmlFor="description">Description</label>
+                    <input pInputText id="description" type="text" formControlName="description" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

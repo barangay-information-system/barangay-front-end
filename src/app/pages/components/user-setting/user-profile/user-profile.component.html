@@ -1,0 +1,142 @@
+<form>
+    <p-toast position="top-center" [life]="1500"></p-toast>
+    <div class="card">
+        <h2>User Profile</h2>
+        <div class="mb-4 flex justify-content-end">
+            <div class="mr-4">
+                <div>
+                    <h3>{{ employee.name }}</h3>
+                </div>
+                <div>
+                    <h5>{{ employee.position }}</h5>
+                </div>
+            </div>
+            <p-image src="https://primefaces.org/cdn/primeng/images/galleria/galleria1.jpg"
+                previewImageSrc="https://primefaces.org/cdn/primeng/images/galleria/galleria1.jpg" alt="Image"
+                width="100" height="100" [preview]="true"></p-image>
+        </div>
+        <div class="grid p-fluid">
+            <div class="col-12 md:col-6">
+                <div class="mb-4">
+                    <p-panel header="Personal Details">
+                        <div class="p-fluid p-formgrid grid">
+                            <div class="field col-12 md:col-3">
+                                <label htmlFor="firstname2">First name</label>
+                                <input pInputText id="firstname2" type="text" readonly [(ngModel)]="employee.first_name"
+                                    [ngModelOptions]="{standalone: true}" />
+                            </div>
+                            <div class="field col-12 md:col-3">
+                                <label htmlFor="lastname2">Middle name</label>
+                                <input pInputText id="lastname2" type="text" readonly />
+                            </div>
+                            <div class="field col-12 md:col-3">
+                                <label htmlFor="firstname2">Last name</label>
+                                <input pInputText id="firstname2" type="text" readonly
+                                    [ngModelOptions]="{standalone: true}" [(ngModel)]="employee.last_name" />
+                            </div>
+                            <div class="field col-12 md:col-3">
+                                <label htmlFor="lastname2">Extension name</label>
+                                <input pInputText id="lastname2" type="text" readonly />
+                            </div>
+
+
+                            <div class="field col-12 md:col-3">
+                                <label htmlFor="address">Address</label>
+                                <input pInputTextarea id="address" rows="4" readonly />
+                            </div>
+                            <div class="field col-12 md:col-3">
+                                <label htmlFor="city">City</label>
+                                <input pInputText id="city" type="text" readonly />
+                            </div>
+                            <div class="field col-12 md:col-3">
+                                <label htmlFor="state">Province</label>
+                                <p-dropdown optionLabel="name" [showClear]="true" readonly></p-dropdown>
+                            </div>
+                            <div class="field col-12 md:col-3">
+                                <label htmlFor="zip">Zip</label>
+                                <input pInputText id="zip" type="text" readonly />
+                            </div>
+
+                            <div class="field col-12 md:col-3">
+                                <label htmlFor="dob">Birthday</label>
+                                <input pInputText placeholder="" readonly [ngModelOptions]="{standalone: true}"
+                                    [(ngModel)]="employee.dob" />
+
+                            </div>
+                            <div class="field col-12 md:col-3">
+                                <label htmlFor="city">Gender</label>
+                                <input pInputText id="city" type="text" readonly [ngModelOptions]="{standalone: true}"
+                                    [(ngModel)]="employee.gender" />
+                            </div>
+                            <div class="field col-12 md:col-3">
+                                <label htmlFor="state">Civil Status</label>
+                                <p-dropdown optionLabel="name" [showClear]="true" readonly></p-dropdown>
+                            </div>
+                        </div>
+                    </p-panel>
+                </div>
+                <div>
+                    <p-panel header="Contact Information">
+                        <div class="p-fluid p-formgrid grid">
+                            <div class="field col-12 md:col-3">
+                                <label htmlFor="firstname2">Mobile Number</label>
+                                <input pInputText id="firstname2" type="text" readonly />
+                            </div>
+                            <div class="field col-12 md:col-3">
+                                <label htmlFor="lastname2">Tel / Fax Number</label>
+                                <input pInputText id="lastname2" type="text" readonly />
+                            </div>
+                            <div class="field col-12 md:col-6">
+                                <label htmlFor="firstname2">Email Address</label>
+                                <input pInputText id="firstname2" type="text" readonly />
+                            </div>
+                        </div>
+                    </p-panel>
+                </div>
+            </div>
+            <div class="col-12 md:col-6">
+                <div class="mb-4">
+                    <form ngForm [formGroup]="form">
+                        <p-panel header="User Details">
+                            <div class="p-fluid p-formgrid grid">
+                                <div class="field col-3">
+                                    <label htmlFor="userCode">User Code</label>
+                                    <input pInputText id="userCode" type="text" readonly [value]="user?.code" />
+                                </div>
+                                <div class="field col-4">
+                                    <label htmlFor="typLevel">Type/Level</label>
+                                    <input pInputText type="text" readonly [value]="user?.typeLevel" />
+                                </div>
+                                <div class="field col-5">
+                                    <label htmlFor="userLevel">User Level</label>
+                                    <input pInputText type="text" readonly [value]="user?.typeLevel" />
+                                </div>
+                                <div class="field col-12">
+                                    <label htmlFor="firstname2">Username</label>
+                                    <input pInputText id="firstname2" type="text" [value]="user?.username" />
+                                </div>
+                                <div class="field col-6">
+                                    <label htmlFor="lastname2">New Password</label>
+                                    <p-password id="password" [toggleMask]="true" placeholder="New Password"
+                                        styleClass="mb-5" inputStyleClass="w-full p-3 md:w-30rem"
+                                        formControlName="password" standalone="true"></p-password>
+                                </div>
+                                <div class="field col-6">
+                                    <label htmlFor="firstname2">Re-type New Password</label>
+                                    <p-password id="retypePassword" [toggleMask]="true"
+                                        placeholder="Re-type new Password" styleClass="mb-5"
+                                        inputStyleClass="w-full p-3 md:w-30rem" standalone="true"
+                                        formControlName="reTypePassword"></p-password>
+                                </div>
+                            </div>
+                        </p-panel>
+                    </form>
+                </div>
+                <div class="flex justify-content-end">
+                    <p-button type="button" label="Update" icon="pi pi-times" [raised]="true"
+                        (click)="changePassword()"></p-button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,36 @@
+<form ngForm [formGroup]="form">
+    <div class="grid w-full">
+        <div class="col-12">
+            <div class="p-fluid p-formgrid grid">
+                <div class="field col-6">
+                    <label htmlFor="code">Code</label>
+                    <input pInputText id="code" formControlName="code" type="text" />
+                </div>
+                <div class="field col-12">
+                    <label htmlFor="decumentTitle">Document Title</label>
+                    <input pInputText id="decumentTitle" formControlName="documentTitle" type="text" />
+                </div>
+                <div class="field col-6">
+                    <label htmlFor="kindOfPermit">Kind of Permit</label>
+                    <input pInputText id="kindOfPermit" formControlName="kindOfPermit" type="text" />
+                </div>
+                <div class="field col-6">
+                    <label htmlFor="typeOfDocument">Type of Document</label>
+                    <!-- <p-dropdown [options]="applicationTypes" optionLabel="permit_type" [showClear]="true"
+                        [filter]="true" filterBy="permit_type" formControlName="application_type"
+                        placeholder="Select type of document.">
+                    </p-dropdown> -->
+                    <div class="flex flex-wrap gap-2">
+                        <div *ngFor="let type of applicationTypes"
+                            class="field-checkbox flex align-items-center">
+                            <p-radioButton [inputId]="type" name="application_type" [value]="type"
+                                formControlName="application_type"></p-radioButton>
+                            <label [for]="type" class="ml-2">{{ type.permit_type }}</label>
+                        </div>
+                    </div>
+                    <!-- <input pInputText id="typeOfDocument" formControlName="application_type" type="text" /> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
