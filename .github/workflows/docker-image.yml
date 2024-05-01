@@ -40,9 +40,9 @@ jobs:
           context: .
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/bplo_front
-          cache-from: type=registry,ref=${{ secrets.DOCKERHUB_USERNAME }}/bplo_front:buildcache
-          cache-to: type=registry,ref=${{ secrets.DOCKERHUB_USERNAME }}/bplo_front:buildcache,mode=max
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/barangay_sys_front
+          cache-from: type=registry,ref=${{ secrets.DOCKERHUB_USERNAME }}/barangay_sys_front:buildcache
+          cache-to: type=registry,ref=${{ secrets.DOCKERHUB_USERNAME }}/barangay_sys_front:buildcache,mode=max
 
       - name: Debugging Build
         run: |
@@ -68,7 +68,7 @@ jobs:
             sudo apt-get update
             sudo apt-get install -y docker-compose
 
-            cd deployment-scripts/bplo_system/
-            docker-compose pull bplo_front
-            docker-compose up -d bplo_front
-            docker-compose logs --tail 20 bplo_front
+            cd deployment-scripts/barangay_sys_front/
+            docker-compose pull barangay_sys_front
+            docker-compose up -d barangay_sys_front
+            docker-compose logs --tail 20 barangay_sys_front
