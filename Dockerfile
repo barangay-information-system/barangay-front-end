@@ -11,4 +11,4 @@ RUN npm run build
 
 # #stage 2
 FROM nginx:alpine
-COPY --from=development /app/dist/barangay_sys_front /usr/share/nginx/html
+COPY --from=development /app/dist/barangay_sys /usr/share/nginx/html
