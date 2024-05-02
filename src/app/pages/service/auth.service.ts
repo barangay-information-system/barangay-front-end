@@ -5,7 +5,7 @@ import { Route, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 
-const AUTH_API = environment.backendUrl;
+const AUTH_API = environment.backendUrl + '/v1';
 const httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
 };
